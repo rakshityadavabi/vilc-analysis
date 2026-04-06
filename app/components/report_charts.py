@@ -21,9 +21,10 @@ ZONE_ORDER = ["EUR", "AFR", "SAZ", "APAC", "NAZ", "MAZ"]
 PLOTLY_TITLE_SIZE = 64
 PLOTLY_TICK_SIZE = 64
 PLOTLY_VALUE_LABEL_SIZE = 64
+ACCOUNT_3_TICK_SIZE = PLOTLY_TICK_SIZE
 MATRIX_TITLE_SIZE = 36
 MATRIX_HEADER_LABEL_SIZE = 26
-MATRIX_ROW_LABEL_SIZE = 22
+MATRIX_ROW_LABEL_SIZE = 24
 MATRIX_VALUE_LABEL_SIZE = 23
 MATRIX_ZONE_LABEL_SIZE = 24
 
@@ -153,7 +154,7 @@ def build_waterfall_figure(
         paper_bgcolor="white",
         plot_bgcolor="white",
         font=dict(family="DejaVu Sans"),
-        xaxis=dict(showgrid=False, zeroline=False, showline=False, title="", tickfont=dict(color="#111111", size=PLOTLY_TICK_SIZE), tickangle=90 if level == "Account_3" else 0, automargin=True),
+        xaxis=dict(showgrid=False, zeroline=False, showline=False, title="", tickfont=dict(color="#111111", size=ACCOUNT_3_TICK_SIZE if level == "Account_3" else PLOTLY_TICK_SIZE), tickangle=90 if level == "Account_3" else 0, automargin=True),
         yaxis=dict(showgrid=False, zeroline=False, showline=False, title="", showticklabels=False),
     )
     fig.update_traces(textfont=dict(color="#111111", size=PLOTLY_VALUE_LABEL_SIZE, family="DejaVu Sans"))

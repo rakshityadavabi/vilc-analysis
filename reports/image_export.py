@@ -6,7 +6,7 @@ from PIL import Image, ImageDraw, ImageFont, ImageOps
 
 
 CANVAS_WIDTH = 3200
-CANVAS_HEIGHT = 7600
+CANVAS_HEIGHT = 13000
 MARGIN_X = 110
 TOP_MARGIN = 38
 HEADER_HEIGHT = 210
@@ -138,6 +138,12 @@ def _single_row(canvas: Image.Image, image: Image.Image, top: int) -> None:
     _paste_fit_width(canvas, image, MARGIN_X, CANVAS_WIDTH - MARGIN_X, top)
 
 
+def _fit_width_height(image: Image.Image) -> int:
+    target_width = CANVAS_WIDTH - 2 * MARGIN_X
+    scale = target_width / float(image.width)
+    return max(1, int(round(image.height * scale)))
+
+
 def export_png_from_assets(month_display: str, year_display: str, image_paths: dict[str, Path], output_path: str | Path) -> Path:
     png_path = Path(output_path)
     png_path.parent.mkdir(parents=True, exist_ok=True)
@@ -164,7 +170,54 @@ def export_png_from_assets(month_display: str, year_display: str, image_paths: d
     _two_up_row(canvas, _load_rgba(image_paths["mtd_category_mtd.png"]), _load_rgba(image_paths["mtd_category_ytd.png"]), current_top)
     current_top += CHART_ROW_HEIGHT + ROW_GAP + 20
 
-    _single_row(canvas, _load_rgba(image_paths["mtd_zone_table.png"]), current_top)
+    zone_table_image = _load_rgba(image_paths["mtd_zone_table.png"])
+    _single_row(canvas, zone_table_image, current_top)
+    current_top += _fit_width_height(zone_table_image) + ROW_GAP + 20
+
+    _draw_section_title(draw, "MTD/YTD VIC Performance vs BU", current_top)
+    current_top += PILL_HEIGHT + SECTION_GAP
+    _two_up_row(canvas, _load_rgba(image_paths["mtd_perf_mtd.png"]), _load_rgba(image_paths["mtd_perf_ytd.png"]), current_top)
+    current_top += CHART_ROW_HEIGHT + ROW_GAP
+
+    _draw_section_title(draw, "MTD/YTD VIC Performance by package", current_top)
+    current_top += PILL_HEIGHT + SECTION_GAP
+    _two_up_row(canvas, _load_rgba(image_paths["mtd_perf_category_mtd.png"]), _load_rgba(image_paths["mtd_perf_category_ytd.png"]), current_top)
+    current_top += CHART_ROW_HEIGHT + ROW_GAP + 20
+
+    _draw_section_title(draw, "MTD vs BGT performance category by Zone ($Mio)", current_top)
+    current_top += PILL_HEIGHT + SECTION_GAP
+    _single_row(canvas, _load_rgba(image_paths["mtd_perf_zone_table.png"]), current_top)
+
+    _draw_footer(draw)
+
+    canvas.convert("RGB").save(png_path, format="PNG", optimize=True)
+    return png_path
+
+
+def export_performance_png_from_assets(month_display: str, year_display: str, image_paths: dict[str, Path], output_path: str | Path) -> Path:
+    png_path = Path(output_path)
+    png_path.parent.mkdir(parents=True, exist_ok=True)
+
+    canvas = Image.new("RGBA", (CANVAS_WIDTH, CANVAS_HEIGHT), "white")
+    draw = ImageDraw.Draw(canvas)
+
+    _draw_header(draw, month_display, year_display)
+
+    current_top = TOP_MARGIN + HEADER_HEIGHT + ROW_GAP
+
+    _draw_section_title(draw, "MTD/YTD VIC Performance vs BU", current_top)
+    current_top += PILL_HEIGHT + SECTION_GAP
+    _two_up_row(canvas, _load_rgba(image_paths["mtd_perf_mtd.png"]), _load_rgba(image_paths["mtd_perf_ytd.png"]), current_top)
+    current_top += CHART_ROW_HEIGHT + ROW_GAP
+
+    _draw_section_title(draw, "MTD/YTD VIC Performance by package", current_top)
+    current_top += PILL_HEIGHT + SECTION_GAP
+    _two_up_row(canvas, _load_rgba(image_paths["mtd_perf_category_mtd.png"]), _load_rgba(image_paths["mtd_perf_category_ytd.png"]), current_top)
+    current_top += CHART_ROW_HEIGHT + ROW_GAP + 20
+
+    _draw_section_title(draw, "MTD vs BGT performance category by Zone ($Mio)", current_top)
+    current_top += PILL_HEIGHT + SECTION_GAP
+    _single_row(canvas, _load_rgba(image_paths["mtd_perf_zone_table.png"]), current_top)
 
     _draw_footer(draw)
 
