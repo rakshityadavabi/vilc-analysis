@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+        <div class="hero-date">{{ month_display }}, {{ year_display }}</div>
+        <div class="hero-title">Preliminary MTD<br>VILC Results | P&P</div>
+  <link rel="stylesheet" href="{{ css_path }}">
+</head>
+<body>
+  <div class="report-page">
+    <header class="hero">
+      <div class="hero-copy">
+        <div class="hero-meta">{{ month_display }}, {{ year_display }}</div>
+        <div class="hero-title">Preliminary MTD<br>VILC Results | P&P</div>
+        <div class="hero-subtitle">{{ report_subtitle }}</div>
+      </div>
+      <div class="section-pill">MTD/YTD VIC P&amp;P vs BU</div>
+        <div class="hero-logo-mark">
+          <div class="hero-logo-icon">▮▮▮</div>
+          <div class="hero-logo-text">PSP<br>TECH</div>
+        </div>
+      </div>
+    </header>
+
+    <section class="report-section">
+      <div class="section-pill">MTD VIC P&amp;P vs BU</div>
+      <div class="chart-row two-col">
+        <figure class="chart-card">
+      <div class="section-pill">MTD/YTD VIC Price vs BU</div>
+        </figure>
+        <figure class="chart-card">
+          <img src="{{ mtd_vic_pp_ytd }}" alt="YTD VIC P&P vs BU">
+        </figure>
+      </div>
+    </section>
+
+    <section class="report-section">
+      <div class="section-pill">MTD VIC Price vs BU</div>
+      <div class="chart-row two-col">
+        <figure class="chart-card">
+          <img src="{{ mtd_vic_price_mtd }}" alt="MTD VIC Price vs BU">
+        </figure>
+        <figure class="chart-card">
+          <img src="{{ mtd_vic_price_ytd }}" alt="YTD VIC Price vs BU">
+        </figure>
+      </div>
+    </section>
+
+    <section class="report-section">
+      <div class="section-pill">Package Level Breakdown</div>
+      <div class="chart-row two-col">
+    <section class="report-section matrix-section">
+      <div class="chart-row full-width">
+        <figure class="chart-card zone-table-card">
+          <img src="{{ mtd_zone_table }}" alt="Package chart by zone">
+        </figure>
+      </div>
+    </section>
+
+    <section class="report-section">
+      <div class="section-pill">Package Chart by Zone</div>
+      <div class="chart-row full-width">
+        <figure class="chart-card zone-table-card">
+          <img src="{{ mtd_zone_table }}" alt="Package chart by zone">
+        </figure>
+      </div>
+    </section>
+
+    <footer class="report-footer">
+      <div class="footer-left">ABInBev</div>
+      <div class="footer-center">Generated report</div>
+      <div class="footer-right">Powered by PSP TECH</div>
+    </footer>
+  </div>
+</body>
+</html>

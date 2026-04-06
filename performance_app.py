@@ -1,3 +1,10 @@
+from app.main import run_app
+import streamlit as st
+
+run_app()
+st.stop()
+
+# Legacy monolith retained below for reference. Execution stops above.
 import streamlit as st
 import pandas as pd
 import plotly.express as px

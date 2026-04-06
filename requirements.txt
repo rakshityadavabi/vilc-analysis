@@ -4,3 +4,4 @@ plotly
 numpy
 databricks-sql-connector
 matplotlib
+kaleido

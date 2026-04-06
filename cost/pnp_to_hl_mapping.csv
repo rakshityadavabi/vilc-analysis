@@ -1,0 +1,964 @@
+source_index,source_name,source_key,target_index,target_name,target_key,match_score,match_method,review_flag
+1,Tanzania Distilleries Ltd - Moshi Depot,tanzania distilleries ltd moshi depot,186,Tanzania Distilleries Ltd,tanzania distilleries ltd,0.940,substring,no
+2,Beer Sales and Distribution,beer sales and distribution,63,San Pedro Sula Beer,san pedro sula beer,0.478,sort_fuzzy,yes
+3,Export from NA~11,export from na 11,21,Caribe Export (Entity),caribe export,0.850,generic_export,no
+4,DC Chuncheon,chuncheon,208,Icheon,icheon,0.667,compact_fuzzy,yes
+5,Japan (Entity),japan,117,Panam,panam,0.600,raw_fuzzy,yes
+6,Bosteels (BE53),bosteels,1,Bosteels (BE53),bosteels,1.000,raw_exact,no
+7,CD Chiclayo,chiclayo,48,Pacfico,pacfico,0.533,compact_fuzzy,yes
+8,Guayaquil,guayaquil,2,Guayaquil,guayaquil,1.000,raw_exact,no
+9,Nuevo Leon,nuevo leon,171,Hato Nuevo,hato nuevo,0.700,sort_fuzzy,yes
+10,CODC,codc,124,CND,cnd,0.571,raw_fuzzy,yes
+11,Argentina (Entity),argentina,281,CERVECERIA ARGENTINA,cerveceria argentina,0.940,substring,no
+12,DC Taubate,taubate,58,Ate,ate,0.940,compact_fuzzy,no
+13,Vryheid Distributor,vryheid distributor,8,Mysore - SPR Distilleries,mysore spr distilleries,0.476,sort_fuzzy,yes
+14,SABMiller Namibia South,sabmiller namibia south,220,ABInBev Namibia Okahandja,abinbev namibia okahandja,0.625,raw_fuzzy,yes
+15,China_SC,china sc,39,China_CN01,china cn01,0.778,raw_fuzzy,no
+16,Xinxiang_PWH,xinxiang,78,Xinxiang,xinxiang,1.000,compact_fuzzy,no
+17,HongKong,hongkong,147,Cheongwon,cheongwon,0.706,raw_fuzzy,yes
+18,Export from EU~14,export from eu 14,21,Caribe Export (Entity),caribe export,0.850,generic_export,no
+19,DC Ulsan,ulsan,10,San Juan,san juan,0.615,sort_fuzzy,yes
+20,Aurangabad - Fosters,aurangabad fosters,3,Aurangabad - Fosters,aurangabad fosters,1.000,raw_exact,no
+21,Export from EU~7,export from eu 7,21,Caribe Export (Entity),caribe export,0.850,generic_export,no
+22,DC San Pedro,san pedro,250,San Pedro Sula CSD,san pedro sula csd,0.940,compact_fuzzy,no
+23,Costa Rica (Entity),costa rica,6,Costa Rica (Entity),costa rica,1.000,raw_exact,no
+24,Transporte Primario,transporte primario,272,South Africa Central,south africa central,0.513,sort_fuzzy,yes
+25,Valle,valle,5,Valle,valle,1.000,raw_exact,no
+26,Planta Pucallpa,planta pucallpa,262,Panama Central,panama central,0.552,raw_fuzzy,yes
+27,CD Chanchamayo,chanchamayo,134,Tocancipa,tocancipa,0.500,compact_fuzzy,yes
+28,Istmo,istmo,42,Quito,quito,0.600,raw_fuzzy,yes
+29,Antofagasta,antofagasta,35,Nantong,nantong,0.556,raw_fuzzy,yes
+30,AMBEV REFRIGERANTES CURITIBANA,ambev refrigerantes curitibana,7,AMBEV REFRIGERANTES CURITIBANA,ambev refrigerantes curitibana,1.000,raw_exact,no
+31,DC Porto Velho,porto velho,172,Puerto Rico (Entity),puerto rico,0.545,compact_fuzzy,yes
+32,DC Blumenau,blumenau,4,Bremen  Subco ExtWH BLS GVZ,bremen,0.571,compact_fuzzy,yes
+33,DC Nova Friburgo,nova friburgo,6,Costa Rica (Entity),costa rica,0.462,raw_fuzzy,yes
+34,DC Equatorial,equatorial,26,Ecuador Central,ecuador central,0.560,compact_fuzzy,yes
+35,DC Redencao,redencao,4,Bremen  Subco ExtWH BLS GVZ,bremen,0.571,compact_fuzzy,yes
+36,Waltloo Depot,waltloo depot,171,Hato Nuevo,hato nuevo,0.522,raw_fuzzy,yes
+37,Jinshibai_TRPT,jinshibai,100,Jinshibai,jinshibai,1.000,compact_fuzzy,no
+38,Mysore - SPR Distilleries,mysore spr distilleries,8,Mysore - SPR Distilleries,mysore spr distilleries,1.000,raw_exact,no
+39,Arequipa,arequipa,9,Arequipa,arequipa,1.000,raw_exact,no
+40,San Juan,san juan,10,San Juan,san juan,1.000,raw_exact,no
+41,CUMBAYA,cumbaya,176,Columbus,columbus,0.533,raw_fuzzy,yes
+42,Nayarit,nayarit,2,Guayaquil,guayaquil,0.500,raw_fuzzy,yes
+43,Noreste,noreste,225,Foster,foster,0.615,raw_fuzzy,yes
+44,Fort Collins,fort collins,11,Fort Collins,fort collins,1.000,raw_exact,no
+45,STL,stl,215,SVBL,svbl,0.571,raw_fuzzy,yes
+46,Guayaramerin,guayaramerin,2,Guayaquil,guayaquil,0.571,raw_fuzzy,yes
+47,F. Natal Prod-DC,f natal prod dc,17,F. YPANE PROD-DC,f ypane prod dc,0.900,raw_fuzzy,no
+48,AMBEV REFRIGERANTES JUNDIAI,ambev refrigerantes jundiai,12,AMBEV REFRIGERANTES JUNDIAI,ambev refrigerantes jundiai,1.000,raw_exact,no
+49,Tanzania Central,tanzania central,14,Tanzania Central,tanzania central,1.000,raw_exact,no
+50,Tanzania Breweries Ltd - Moshi Depot,tanzania breweries ltd moshi depot,131,Tanzania Breweries Ltd - Dar Brewery,tanzania breweries ltd dar brewery,0.900,raw_fuzzy,no
+51,Nampula Brewery,nampula brewery,13,Nampula Brewery,nampula brewery,1.000,raw_exact,no
+52,Bellville Depot,bellville depot,119,OELDE Subco POTTs,oelde potts,0.538,compact_fuzzy,yes
+53,Welkom Depot,welkom depot,119,OELDE Subco POTTs,oelde potts,0.609,compact_fuzzy,yes
+54,DC Beijing,beijing,232,Baoding,baoding,0.571,compact_fuzzy,yes
+55,Mudanjiang(New)_TRPT,mudanjiang,61,Mudanjiang,mudanjiang,1.000,compact_fuzzy,no
+56,Xinxiang_TRPT,xinxiang,78,Xinxiang,xinxiang,1.000,compact_fuzzy,no
+57,DC Dehradun,dehradun,198,Wuhan,wuhan,0.462,compact_fuzzy,yes
+58,CD DANLI,danli,93,Yanji,yanji,0.600,compact_fuzzy,yes
+59,Oaxaca,oaxaca,156,Boyaca,boyaca,0.667,raw_fuzzy,yes
+60,Dexmod,dexmod,251,Cerv Modelo,cerv modelo,0.471,raw_fuzzy,yes
+61,Merrimack,merrimack,15,Merrimack,merrimack,1.000,raw_exact,no
+62,Non_Supply,non supply,221,Jupille - BOPS,jupille bops,0.455,sort_fuzzy,yes
+63,F. YPANE PROD-DC,f ypane prod dc,17,F. YPANE PROD-DC,f ypane prod dc,1.000,raw_exact,no
+64,Export from SA~4,export from sa 4,21,Caribe Export (Entity),caribe export,0.850,generic_export,no
+65,CERVEJARIA AGUAS CLARAS DO SUL,cervejaria aguas claras do sul,16,CERVEJARIA AGUAS CLARAS DO SUL,cervejaria aguas claras do sul,1.000,raw_exact,no
+66,NBL - HO,nbl ho,19,NBL - HO,nbl ho,1.000,raw_exact,no
+67,Swaziland Central,swaziland central,18,Swaziland Central,swaziland central,1.000,raw_exact,no
+68,Groblersdal Depot,groblersdal depot,120,HERSTAL JOST WH,herstal jost,0.552,compact_fuzzy,yes
+69,Shiliang,shiliang,20,Shiliang,shiliang,1.000,raw_exact,no
+70,Intrazone~8,intrazone 8,47,Centro,centro,0.471,raw_fuzzy,yes
+71,Zhangzhou_TRPT,zhangzhou,263,Zhangzhou,zhangzhou,1.000,compact_fuzzy,no
+72,Aurangabad,aurangabad,3,Aurangabad - Fosters,aurangabad fosters,0.940,substring,no
+73,Barrancabermeja,barrancabermeja,30,CERVEJARIA AQUIRAZ,cervejaria aquiraz,0.545,sort_fuzzy,yes
+74,CD Cono Norte,cono norte,11,Fort Collins,fort collins,0.636,sort_fuzzy,yes
+75,Williamsburg,williamsburg,22,Williamsburg,williamsburg,1.000,raw_exact,no
+76,F. POMPEYA PROD-DC,f pompeya prod dc,23,F. POMPEYA PROD-DC,f pompeya prod dc,1.000,raw_exact,no
+77,DC Joinville,joinville,149,Jacksonville,jacksonville,0.762,compact_fuzzy,no
+78,ZX_Wals,zx wals,113,PALS,pals,0.545,raw_fuzzy,yes
+79,NBL - Mbarara,nbl mbarara,24,NBL - Mbarara,nbl mbarara,1.000,raw_exact,no
+80,George Distributor,george distributor,8,Mysore - SPR Distilleries,mysore spr distilleries,0.488,raw_fuzzy,yes
+81,International Breweries Plc - Isolo Depot Lagos,international breweries plc isolo depot lagos,197,Zambia Breweries - Ndola Brewery,zambia breweries ndola brewery,0.480,sort_fuzzy,yes
+82,DGO China,dgo china,39,China_CN01,china cn01,0.632,sort_fuzzy,yes
+83,Putian (New) Craft_PWH,putian craft,146,Putian (New) Craft,putian craft,1.000,compact_fuzzy,no
+84,Kolkata-Celebrity-ABI (lessee),kolkata celebrity abi,25,Kolkata-Celebrity-ABI (lessee),kolkata celebrity abi,1.000,raw_exact,no
+85,Export from MA~2,export from ma 2,21,Caribe Export (Entity),caribe export,0.850,generic_export,no
+86,DC Bohemia,bohemia,32,CERVEJARIA BOHEMIA,cervejaria bohemia,0.940,substring,no
+87,Neiva,neiva,95,Newark,newark,0.545,raw_fuzzy,yes
+88,Siberia,siberia,20,Shiliang,shiliang,0.533,raw_fuzzy,yes
+89,Tunja,tunja,154,LUJAN,lujan,0.600,raw_fuzzy,yes
+90,CD Ate,ate,58,Ate,ate,1.000,compact_fuzzy,no
+91,CD Pucallpa,pucallpa,135,Zacapa,zacapa,0.571,compact_fuzzy,yes
+92,Ecuador Central,ecuador central,26,Ecuador Central,ecuador central,1.000,raw_exact,no
+93,Houston,houston,27,Houston,houston,1.000,raw_exact,no
+94,BLDV,bldv,31,HBL,hbl,0.571,raw_fuzzy,yes
+95,Coquimbo,coquimbo,176,Columbus,columbus,0.625,raw_fuzzy,yes
+96,Export from NA~12,export from na 12,21,Caribe Export (Entity),caribe export,0.850,generic_export,no
+97,DC S J Pinhais,s j pinhais,100,Jinshibai,jinshibai,0.600,compact_fuzzy,yes
+98,DC Litoral,litoral,88,Lesotho Central,lesotho central,0.545,compact_fuzzy,yes
+99,DC CDL Broker MS,cdl broker ms,85,Columbia Brewery,columbia brewery,0.552,sort_fuzzy,yes
+100,Denver Depot,denver depot,119,OELDE Subco POTTs,oelde potts,0.522,compact_fuzzy,yes
+101,DC Zhoushan,zhoushan,239,Foshan,foshan,0.714,compact_fuzzy,yes
+102,Sonipat-Harayana Breweries-HBL,sonipat harayana breweries hbl,28,Sonipat-Harayana Breweries-HBL,sonipat harayana breweries hbl,1.000,raw_exact,no
+103,Bremen_PWH,bremen,4,Bremen  Subco ExtWH BLS GVZ,bremen,1.000,compact_fuzzy,no
+104,Valledupar,valledupar,5,Valle,valle,0.940,substring,no
+105,CD Huaraz,huaraz,201,Huachipa,huachipa,0.571,compact_fuzzy,yes
+106,PASCUALES,pascuales,221,Jupille - BOPS,jupille bops,0.476,sort_fuzzy,yes
+107,USA CORP,usa corp,222,Cusco,cusco,0.615,raw_fuzzy,yes
+108,USA,usa,74,Zambia Breweries - Lusaka CSD,zambia breweries lusaka csd,0.940,substring,no
+109,WMS,wms,283,Imports,imports,0.400,raw_fuzzy,yes
+110,CERVEJARIA AQUIRAZ,cervejaria aquiraz,30,CERVEJARIA AQUIRAZ,cervejaria aquiraz,1.000,raw_exact,no
+111,DC Castelao,castelao,256,Yucateca,yucateca,0.625,compact_fuzzy,yes
+112,DC Santa Cruz,santa cruz,213,Santa Cruz - BOPS,santa cruz bops,0.940,compact_fuzzy,no
+113,Potchefstroom Depot,potchefstroom depot,155,FERTH TUCHER Subco,ferth tucher,0.516,sort_fuzzy,yes
+114,Export from EU~11,export from eu 11,21,Caribe Export (Entity),caribe export,0.850,generic_export,no
+115,Wenzhou(New)_TRPT,wenzhou,41,Wenzhou,wenzhou,1.000,compact_fuzzy,no
+116,CD Trujillo,trujillo,266,Trpico,trpico,0.571,compact_fuzzy,yes
+117,CD Cajamarca,cajamarca,170,Bucaramanga,bucaramanga,0.600,compact_fuzzy,yes
+118,Sureste,sureste,229,Sagamu Brewery,sagamu brewery,0.476,raw_fuzzy,yes
+119,Altiplano,altiplano,115,Atlantico,atlantico,0.667,raw_fuzzy,yes
+120,CRTV,crtv,105,Cartersville,cartersville,0.500,raw_fuzzy,yes
+121,CAMO,camo,117,Panam,panam,0.444,raw_fuzzy,yes
+122,DC Mississauga,mississauga,10,San Juan,san juan,0.421,compact_fuzzy,yes
+123,Export from SA,export from sa,21,Caribe Export (Entity),caribe export,0.850,generic_export,no
+124,F. Brasilia Prod-DC,f brasilia prod dc,137,F. SANTIAGO PROD-DC,f santiago prod dc,0.900,raw_fuzzy,no
+125,CERVEJARIA BOHEMIA,cervejaria bohemia,32,CERVEJARIA BOHEMIA,cervejaria bohemia,1.000,raw_exact,no
+126,Tanzania Breweries Ltd - Mbeya Brewery,tanzania breweries ltd mbeya brewery,34,Tanzania Breweries Ltd - Mbeya Brewery,tanzania breweries ltd mbeya brewery,1.000,raw_exact,no
+127,KBL Opaque - Gaborone,kbl opaque gaborone,33,KBL Opaque - Gaborone,kbl opaque gaborone,1.000,raw_exact,no
+128,Export from MA,export from ma,21,Caribe Export (Entity),caribe export,0.850,generic_export,no
+129,Phuthaditjhaba Depot,phuthaditjhaba depot,21,Caribe Export (Entity),caribe export,0.485,raw_fuzzy,yes
+130,Springfield Depot,springfield depot,79,SPR,spr,0.940,substring,no
+131,Nantong,nantong,35,Nantong,nantong,1.000,raw_exact,no
+132,Wuhan RPB,wuhan rpb,36,Wuhan RPB,wuhan rpb,1.000,raw_exact,no
+133,DC Chengdu,chengdu,147,Cheongwon,cheongwon,0.625,compact_fuzzy,yes
+134,DC Bhiwandi,bhiwandi,255,Bhiwandi-ABI NAB,bhiwandi abi nab,0.940,compact_fuzzy,no
+135,Panawest,panawest,117,Panam,panam,0.615,raw_fuzzy,yes
+136,Export from MA~32,export from ma 32,21,Caribe Export (Entity),caribe export,0.850,generic_export,no
+137,CD2 Itagui,cd2 itagui,102,Tangshan 2,tangshan 2,0.500,sort_fuzzy,yes
+138,Tulua,tulua,154,LUJAN,lujan,0.600,raw_fuzzy,yes
+139,CD Camana,camana,170,Bucaramanga,bucaramanga,0.706,compact_fuzzy,yes
+140,Hidalgo,hidalgo,20,Shiliang,shiliang,0.533,raw_fuzzy,yes
+141,F. MONTEVIDEO PROD-DC,f montevideo prod dc,38,F. MONTEVIDEO PROD-DC,f montevideo prod dc,1.000,raw_exact,no
+142,CDR Bahia,bahia,118,CERVEJARIA DA BAHIA,cervejaria da bahia,0.940,substring,no
+143,CDR LOUVEIRA,louveira,26,Ecuador Central,ecuador central,0.519,raw_fuzzy,yes
+144,DC Maceio,maceio,48,Pacfico,pacfico,0.615,compact_fuzzy,yes
+145,DC Salvador,salvador,293,El Salvador Central,el salvador central,0.940,substring,no
+146,Harbin 2,harbin 2,40,Harbin 2,harbin 2,1.000,raw_exact,no
+147,DC Shanghai South,shanghai south,263,Zhangzhou,zhangzhou,0.609,compact_fuzzy,yes
+148,DC Ningbo,ningbo,92,Ningbo,ningbo,1.000,compact_fuzzy,no
+149,DC Chandigarh,chandigarh,287,India HQ,india hq,0.556,compact_fuzzy,yes
+150,Canary Islands Central,canary islands central,18,Swaziland Central,swaziland central,0.718,raw_fuzzy,yes
+151,United Kingdom (Entity),united kingdom,92,Ningbo,ningbo,0.500,raw_fuzzy,yes
+152,CD2 Boyaca,cd2 boyaca,156,Boyaca,boyaca,0.940,substring,no
+153,CD Callao,callao,5,Valle,valle,0.545,compact_fuzzy,yes
+154,LA,la,115,Atlantico,atlantico,0.940,substring,no
+155,CD Oruro,oruro,159,Torren,torren,0.545,compact_fuzzy,yes
+156,DC Olinda,olinda,287,India HQ,india hq,0.571,compact_fuzzy,yes
+157,DC Presidente Prudente,presidente prudente,164,F. CORRIENTES PROD-DC,f corrientes prod dc,0.524,raw_fuzzy,yes
+158,Bloemfontein Depot,bloemfontein depot,38,F. MONTEVIDEO PROD-DC,f montevideo prod dc,0.526,sort_fuzzy,yes
+159,Isando Depot,isando depot,142,Putian (New),putian,0.556,sort_fuzzy,yes
+160,Wenzhou,wenzhou,41,Wenzhou,wenzhou,1.000,raw_exact,no
+161,Jinzhou_PWH,jinzhou,69,Jinzhou,jinzhou,1.000,compact_fuzzy,no
+162,Norway (Entity),norway,95,Newark,newark,0.500,raw_fuzzy,yes
+163,Netherlands (Entity),netherlands,111,Uganda Central,uganda central,0.560,sort_fuzzy,yes
+164,CD TALANGA,talanga,270,Ghana Central,ghana central,0.600,sort_fuzzy,yes
+165,Magangue,magangue,46,Gwangju,gwangju,0.667,raw_fuzzy,yes
+166,Pasto,pasto,113,PALS,pals,0.667,raw_fuzzy,yes
+167,Central Perú,central peru,84,Central Per,central per,0.957,substring,no
+168,CD Ica,ica,6,Costa Rica (Entity),costa rica,0.940,substring,no
+169,Quito,quito,42,Quito,quito,1.000,raw_exact,no
+170,ARGENTINA IMPORT PLANT,argentina import plant,281,CERVECERIA ARGENTINA,cerveceria argentina,0.571,sort_fuzzy,yes
+171,Export from MA~46,export from ma 46,21,Caribe Export (Entity),caribe export,0.850,generic_export,no
+172,Wuhan Craft,wuhan craft,44,Wuhan Craft,wuhan craft,1.000,raw_exact,no
+173,DC Luoyang,luoyang,154,LUJAN,lujan,0.667,compact_fuzzy,yes
+174,Baoding_PWH,baoding,232,Baoding,baoding,1.000,compact_fuzzy,no
+175,DC Wonju,wonju,46,Gwangju,gwangju,0.667,compact_fuzzy,yes
+176,Gwangju,gwangju,46,Gwangju,gwangju,1.000,raw_exact,no
+177,Pune - Pushpam,pune pushpam,50,Pune - Pushpam,pune pushpam,1.000,raw_exact,no
+178,France_PWH,france,239,Foshan,foshan,0.500,compact_fuzzy,yes
+179,DC Mao,mao,251,Cerv Modelo,cerv modelo,0.471,raw_fuzzy,yes
+180,CD LA CEIBA,la ceiba,279,CBL,cbl,0.545,sort_fuzzy,yes
+181,Autosur,autosur,42,Quito,quito,0.500,raw_fuzzy,yes
+182,Centro,centro,47,Centro,centro,1.000,raw_exact,no
+183,HTN,htn,27,Houston,houston,0.600,raw_fuzzy,yes
+184,LONDON Prod-DC,london prod dc,49,LONDON Prod-DC,london prod dc,1.000,raw_exact,no
+185,DC Sherbrooke,sherbrooke,121,Wernigerode - BOPS,wernigerode bops,0.462,sort_fuzzy,yes
+186,Suqian_TRPT,suqian,68,Suqian,suqian,1.000,compact_fuzzy,no
+187,Taiwan_VN,taiwan vn,255,Bhiwandi-ABI NAB,bhiwandi abi nab,0.560,sort_fuzzy,yes
+188,Munich,munich,174,Munich - BOPS,munich bops,0.940,substring,no
+189,Ireland (Entity),ireland,177,Fairfield,fairfield,0.625,raw_fuzzy,yes
+190,Export from EU~3,export from eu 3,21,Caribe Export (Entity),caribe export,0.850,generic_export,no
+191,CD Pasatiempo,pasatiempo,117,Panam,panam,0.533,compact_fuzzy,yes
+192,HUB KKAA UIO,hub kkaa uio,2,Guayaquil,guayaquil,0.476,raw_fuzzy,yes
+193,PORT,port,283,Imports,imports,0.940,substring,no
+194,CERVEJARIA JAGUARIUNA,cervejaria jaguariuna,52,CERVEJARIA JAGUARIUNA,cervejaria jaguariuna,1.000,raw_exact,no
+195,DC Floripa,floripa,9,Arequipa,arequipa,0.533,compact_fuzzy,yes
+196,DC Sao Cristovao,sao cristovao,6,Costa Rica (Entity),costa rica,0.522,compact_fuzzy,yes
+197,Hartswater Depot,hartswater depot,58,Ate,ate,0.940,substring,no
+198,Yingkou,yingkou,53,Yingkou,yingkou,1.000,raw_exact,no
+199,Export from China (Wuhan),export from china,21,Caribe Export (Entity),caribe export,0.850,generic_export,no
+200,Ziyang_TRPT,ziyang,273,Ziyang,ziyang,1.000,compact_fuzzy,no
+201,DC Pocheon,pocheon,208,Icheon,icheon,0.769,compact_fuzzy,no
+202,Luxembourg (Entity),luxembourg,176,Columbus,columbus,0.556,raw_fuzzy,yes
+203,Export from NA,export from na,21,Caribe Export (Entity),caribe export,0.850,generic_export,no
+204,CD Huancayo,huancayo,201,Huachipa,huachipa,0.625,compact_fuzzy,yes
+205,MERR,merr,15,Merrimack,merrimack,0.940,substring,no
+206,Cervejas de Mocambique - Maheu Maputo,cervejas de mocambique maheu maputo,60,Cervejas de Mocambique - Maheu Maputo,cervejas de mocambique maheu maputo,1.000,raw_exact,no
+207,Nigeria Central,nigeria central,57,Nigeria Central,nigeria central,1.000,raw_exact,no
+208,China_TRPT,china,39,China_CN01,china cn01,0.940,compact_fuzzy,no
+209,Charminar,charminar,173,Sangareddy - Charminar - CBL,sangareddy charminar cbl,0.940,substring,no
+210,Diekirch,diekirch,265,Diekirch - BOPS,diekirch bops,0.940,substring,no
+211,DC Puerto Plata,puerto plata,172,Puerto Rico (Entity),puerto rico,0.609,compact_fuzzy,yes
+212,BODEGAS BEER,bodegas beer,271,Beira Brewery,beira brewery,0.640,raw_fuzzy,yes
+213,Ate,ate,58,Ate,ate,1.000,raw_exact,no
+214,CD Tacna,tacna,117,Panam,panam,0.600,compact_fuzzy,yes
+215,Centro Sur T2,centro sur t2,47,Centro,centro,0.940,substring,no
+216,Metropolitana,metropolitana,14,Tanzania Central,tanzania central,0.552,sort_fuzzy,yes
+217,Cobija,cobija,259,NBL - Jinja,nbl jinja,0.533,raw_fuzzy,yes
+218,Concepcion,concepcion,147,Cheongwon,cheongwon,0.526,raw_fuzzy,yes
+219,F. NOVA MINAS PROD-DC,f nova minas prod dc,59,F. NOVA MINAS PROD-DC,f nova minas prod dc,1.000,raw_exact,no
+220,DC Camboriu,camboriu,65,CARDIFF Subco,cardiff,0.533,compact_fuzzy,yes
+221,DC Mogi Mirim,mogi mirim,15,Merrimack,merrimack,0.421,compact_fuzzy,yes
+222,DC Pouso Alegre,pouso alegre,119,OELDE Subco POTTs,oelde potts,0.522,sort_fuzzy,yes
+223,DC Imperatriz,imperatriz,283,Imports,imports,0.588,compact_fuzzy,yes
+224,Maluti Mountain Brewery - Maputsoe Depot,maluti mountain brewery maputsoe depot,139,Maluti Mountain Brewery - Maseru Brewery,maluti mountain brewery maseru brewery,0.900,raw_fuzzy,no
+225,Kimberley Depot,kimberley depot,119,OELDE Subco POTTs,oelde potts,0.538,compact_fuzzy,yes
+226,Port Shepstone Depot,port shepstone depot,223,ST. JOHN'S Prod-DC,st john s prod dc,0.486,sort_fuzzy,yes
+227,Garankuwa Depot,garankuwa depot,21,Caribe Export (Entity),caribe export,0.500,raw_fuzzy,yes
+228,Mudanjiang,mudanjiang,61,Mudanjiang,mudanjiang,1.000,raw_exact,no
+229,Xiaogan,xiaogan,182,Xinyang,xinyang,0.571,raw_fuzzy,yes
+230,DC Samana,samana,170,Bucaramanga,bucaramanga,0.600,raw_fuzzy,yes
+231,DC Changuinola,changuinola,194,Barranquilla,barranquilla,0.522,compact_fuzzy,yes
+232,San Pedro Sula Beer,san pedro sula beer,63,San Pedro Sula Beer,san pedro sula beer,1.000,raw_exact,no
+233,Puente Nacional,puente nacional,209,KBL Opaque - Francistown,kbl opaque francistown,0.541,sort_fuzzy,yes
+234,Export from MA~28,export from ma 28,21,Caribe Export (Entity),caribe export,0.850,generic_export,no
+235,CERVEJARIA FONTE DA MATA,cervejaria fonte da mata,291,CERVEJARIA FONTE DA MATA,cervejaria fonte da mata,1.000,raw_exact,no
+236,F. PERNAMBUCO PROD-DC,f pernambuco prod dc,64,F. PERNAMBUCO PROD-DC,f pernambuco prod dc,1.000,raw_exact,no
+237,DC Caruaru,caruaru,9,Arequipa,arequipa,0.533,compact_fuzzy,yes
+238,DC Com PI,com pi,6,Costa Rica (Entity),costa rica,0.500,compact_fuzzy,yes
+239,Tanzania Breweries Ltd - Mwanza Brewery,tanzania breweries ltd mwanza brewery,67,Tanzania Breweries Ltd - Mwanza Brewery,tanzania breweries ltd mwanza brewery,1.000,raw_exact,no
+240,KBL - Beer Production,kbl beer production,66,KBL - Beer Production,kbl beer production,1.000,raw_exact,no
+241,Maluti Mountain Brewery - Mafeteng Depot,maluti mountain brewery mafeteng depot,139,Maluti Mountain Brewery - Maseru Brewery,maluti mountain brewery maseru brewery,0.900,raw_fuzzy,no
+242,Jinzhou,jinzhou,69,Jinzhou,jinzhou,1.000,raw_exact,no
+243,Suqian,suqian,68,Suqian,suqian,1.000,raw_exact,no
+244,DC BUSE_HQ,buse hq,188,Korea HQ,korea hq,0.533,compact_fuzzy,yes
+245,Kunming_TRPT,kunming,75,Kunming,kunming,1.000,compact_fuzzy,no
+246,DC Jeonju,jeonju,208,Icheon,icheon,0.533,raw_fuzzy,yes
+247,Intrazone~10,intrazone 10,39,China_CN01,china cn01,0.455,raw_fuzzy,yes
+248,Bosteels,bosteels,1,Bosteels (BE53),bosteels,1.000,raw_exact,no
+249,CD COMAYAGUA,comayagua,156,Boyaca,boyaca,0.533,compact_fuzzy,yes
+250,CD Cañete,canete,58,Ate,ate,0.667,compact_fuzzy,yes
+251,CD Ilo,ilo,144,BDIL,bdil,0.600,raw_fuzzy,yes
+252,ZAMORA,zamora,135,Zacapa,zacapa,0.500,raw_fuzzy,yes
+253,Guadalajara,guadalajara,72,Guadalajara,guadalajara,1.000,raw_exact,no
+254,DC Norte SP,norte sp,168,Fosters,fosters,0.533,compact_fuzzy,yes
+255,DC Alfenas,alfenas,113,PALS,pals,0.545,compact_fuzzy,yes
+256,DC Maraba,maraba,24,NBL - Mbarara,nbl mbarara,0.600,raw_fuzzy,yes
+257,CDL AS Mina,cdl as mina,189,Colombia Central,colombia central,0.519,sort_fuzzy,yes
+258,Zambia Breweries - Lusaka Brewery,zambia breweries lusaka brewery,73,Zambia Breweries - Lusaka Brewery,zambia breweries lusaka brewery,1.000,raw_exact,no
+259,Zambia Breweries - Lusaka CSD,zambia breweries lusaka csd,74,Zambia Breweries - Lusaka CSD,zambia breweries lusaka csd,1.000,raw_exact,no
+260,Kunming,kunming,75,Kunming,kunming,1.000,raw_exact,no
+261,DGO_Doumao,dgo doumao,217,F. MENDOZA PROD-DC,f mendoza prod dc,0.444,sort_fuzzy,yes
+262,Putian Museum,putian museum,142,Putian (New),putian,0.940,substring,no
+263,Sangareddy - Crown Telangana,sangareddy crown telangana,76,Sangareddy - Crown Telangana,sangareddy crown telangana,1.000,raw_exact,no
+264,Export from MA~33,export from ma 33,21,Caribe Export (Entity),caribe export,0.850,generic_export,no
+265,BODEGAS CSD's,bodegas csd s,184,Issum - BOPS,issum bops,0.522,sort_fuzzy,yes
+266,Honduras (Entity),honduras,292,Honduras Central,honduras central,0.940,substring,no
+267,Aguachica,aguachica,201,Huachipa,huachipa,0.706,raw_fuzzy,yes
+268,Armenia,armenia,9,Arequipa,arequipa,0.667,raw_fuzzy,yes
+269,Yopal,yopal,113,PALS,pals,0.667,raw_fuzzy,yes
+270,Export from MA~22,export from ma 22,21,Caribe Export (Entity),caribe export,0.850,generic_export,no
+271,STANLEY PARK BREWERY,stanley park brewery,77,STANLEY PARK BREWERY,stanley park brewery,1.000,raw_exact,no
+272,Mike's Beverage Company,mike s beverage company,218,Ilesa Brewery,ilesa brewery,0.500,raw_fuzzy,yes
+273,DC Chicoutimi,chicoutimi,27,Houston,houston,0.471,compact_fuzzy,yes
+274,Rosslyn depot,rosslyn depot,192,Rosslyn Brewery,rosslyn brewery,0.643,raw_fuzzy,yes
+275,Xinxiang,xinxiang,78,Xinxiang,xinxiang,1.000,raw_exact,no
+276,Jishui_TRPT,jishui,278,Jishui,jishui,1.000,compact_fuzzy,no
+277,Yingkou_TRPT,yingkou,53,Yingkou,yingkou,1.000,compact_fuzzy,no
+278,VSIP,vsip,80,VSIP,vsip,1.000,raw_exact,no
+279,DC Icheon,icheon,208,Icheon,icheon,1.000,compact_fuzzy,no
+280,Magor_PWH,magor,163,Magor - BOPS,magor bops,0.940,substring,no
+281,Jupille_PWH,jupille,221,Jupille - BOPS,jupille bops,0.940,substring,no
+282,DC Margen Oriental,margen oriental,129,Caribbean Central,caribbean central,0.629,raw_fuzzy,yes
+283,CD2 Yumbo,cd2 yumbo,65,CARDIFF Subco,cardiff,0.545,raw_fuzzy,yes
+284,Mexico Central,mexico central,83,Mexico Central,mexico central,1.000,raw_exact,no
+285,Edo Mexico,edo mexico,83,Mexico Central,mexico central,0.667,sort_fuzzy,yes
+286,Acapulco,acapulco,222,Cusco,cusco,0.615,raw_fuzzy,yes
+287,Columbia Brewery,columbia brewery,85,Columbia Brewery,columbia brewery,1.000,raw_exact,no
+288,DC Aracatuba,aracatuba,157,CERVEJARIA CUIABA,cervejaria cuiaba,0.552,raw_fuzzy,yes
+289,Tanzania Breweries Ltd - Arusha Brewery,tanzania breweries ltd arusha brewery,86,Tanzania Breweries Ltd - Arusha Brewery,tanzania breweries ltd arusha brewery,1.000,raw_exact,no
+290,PMburg Depot,pmburg depot,175,EDMONTON Prod-DC,edmonton prod dc,0.500,sort_fuzzy,yes
+291,CENTREGOFF,centregoff,47,Centro,centro,0.750,raw_fuzzy,no
+292,HQ Gwangju,gwangju,46,Gwangju,gwangju,1.000,compact_fuzzy,no
+293,DC Bilaspur,bilaspur,233,Gurdaspur- ABBPL,gurdaspur abbpl,0.609,sort_fuzzy,yes
+294,Export from MA~4,export from ma 4,21,Caribe Export (Entity),caribe export,0.850,generic_export,no
+295,Export from EU~27,export from eu 27,21,Caribe Export (Entity),caribe export,0.850,generic_export,no
+296,United Kingdom_PWH,united kingdom,92,Ningbo,ningbo,0.500,compact_fuzzy,yes
+297,CD Satipo,satipo,80,VSIP,vsip,0.600,compact_fuzzy,yes
+298,Norte Oriente T2,norte oriente t2,11,Fort Collins,fort collins,0.500,raw_fuzzy,yes
+299,YAGUACHI,yaguachi,201,Huachipa,huachipa,0.625,raw_fuzzy,yes
+300,Export from MA~20,export from ma 20,21,Caribe Export (Entity),caribe export,0.850,generic_export,no
+301,DC Uberaba,uberaba,160,C. UBERLANDIA PROD-DC,c uberlandia prod dc,0.533,raw_fuzzy,yes
+302,Intafact Beverages - Benin Depot,intafact beverages benin depot,203,Intafact Beverages Beer Division,intafact beverages beer division,0.900,raw_fuzzy,no
+303,DC Taiyuan,taiyuan,142,Putian (New),putian,0.615,compact_fuzzy,yes
+304,Yanji_TRPT,yanji,93,Yanji,yanji,1.000,compact_fuzzy,no
+305,DC Daegu,daegu,46,Gwangju,gwangju,0.500,compact_fuzzy,yes
+306,Commercial Duty Free,commercial duty free,106,F. ACHERAL PROD-DC,f acheral prod dc,0.541,sort_fuzzy,yes
+307,Travel & Retail,travel and retail,55,EERSEL DC+repacking,eersel dc repacking,0.556,raw_fuzzy,yes
+308,Caribe Export,caribe export,21,Caribe Export (Entity),caribe export,1.000,raw_exact,no
+309,Turbaco,turbaco,266,Trpico,trpico,0.615,raw_fuzzy,yes
+310,Tabasco,tabasco,183,ENTIRIS Aarschot Subco,entiris aarschot,0.522,compact_fuzzy,yes
+311,F. EL ALTO PROD-DC,f el alto prod dc,90,F. EL ALTO PROD-DC,f el alto prod dc,1.000,raw_exact,no
+312,CERVEJARIA ANAPOLIS,cervejaria anapolis,91,CERVEJARIA ANAPOLIS,cervejaria anapolis,1.000,raw_exact,no
+313,DC Pavuna,pavuna,117,Panam,panam,0.727,compact_fuzzy,yes
+314,DC Sao Jose dos Campos,sao jose dos campos,137,F. SANTIAGO PROD-DC,f santiago prod dc,0.450,raw_fuzzy,yes
+315,Knysna Depot,knysna depot,119,OELDE Subco POTTs,oelde potts,0.522,sort_fuzzy,yes
+316,Neemrana,neemrana,24,NBL - Mbarara,nbl mbarara,0.526,raw_fuzzy,yes
+317,Tanzania Distilleries Ltd - Arusha Depot,tanzania distilleries ltd arusha depot,186,Tanzania Distilleries Ltd,tanzania distilleries ltd,0.940,substring,no
+318,Rustenburg Depot,rustenburg depot,143,BRUSSELS EXPORT EXT WH,brussels export ext,0.514,compact_fuzzy,yes
+319,Yanji,yanji,93,Yanji,yanji,1.000,raw_exact,no
+320,China HQ,china hq,287,India HQ,india hq,0.750,raw_fuzzy,no
+321,DC BUC HQ,buc hq,19,NBL - HO,nbl ho,0.500,compact_fuzzy,yes
+322,Jiamusi New_PWH,jiamusi new,112,Jiamusi New,jiamusi new,1.000,compact_fuzzy,no
+323,Jingmen_PWH,jingmen,259,NBL - Jinja,nbl jinja,0.500,sort_fuzzy,yes
+324,Japan HQ,japan hq,188,Korea HQ,korea hq,0.500,raw_fuzzy,yes
+325,Bremen,bremen,4,Bremen  Subco ExtWH BLS GVZ,bremen,1.000,compact_fuzzy,no
+326,La Constancia Beer,la constancia beer,94,La Constancia Beer,la constancia beer,1.000,raw_exact,no
+327,CD Tarapoto,tarapoto,266,Trpico,trpico,0.571,compact_fuzzy,yes
+328,Veracruz,veracruz,157,CERVEJARIA CUIABA,cervejaria cuiaba,0.480,raw_fuzzy,yes
+329,Newark,newark,95,Newark,newark,1.000,raw_exact,no
+330,Export from EU~8,export from eu 8,21,Caribe Export (Entity),caribe export,0.850,generic_export,no
+331,CERVEJARIA TERESINA,cervejaria teresina,97,CERVEJARIA TERESINA,cervejaria teresina,1.000,raw_exact,no
+332,F. GUARULHOS PROD-DC,f guarulhos prod dc,96,F. GUARULHOS PROD-DC,f guarulhos prod dc,1.000,raw_exact,no
+333,Zambia Central,zambia central,99,Zambia Central,zambia central,1.000,raw_exact,no
+334,Baragwanath Depot,baragwanath depot,170,Bucaramanga,bucaramanga,0.500,raw_fuzzy,yes
+335,Worcester Distributor,worcester distributor,8,Mysore - SPR Distilleries,mysore spr distilleries,0.545,raw_fuzzy,yes
+336,Jinshibai,jinshibai,100,Jinshibai,jinshibai,1.000,raw_exact,no
+337,GWJ,gwj,46,Gwangju,gwangju,0.600,raw_fuzzy,yes
+338,Export from EU~13,export from eu 13,21,Caribe Export (Entity),caribe export,0.850,generic_export,no
+339,WB-C,wb c,279,CBL,cbl,0.571,sort_fuzzy,yes
+340,Hyderabad,hyderabad,99,Zambia Central,zambia central,0.435,sort_fuzzy,yes
+341,DC Pondicherry,pondicherry,208,Icheon,icheon,0.471,compact_fuzzy,yes
+342,Dominican Republic (Entity),dominican republic,288,Dominican Republic Central,dominican republic central,0.940,substring,no
+343,DC Central,central,84,Central Per,central per,0.940,compact_fuzzy,no
+344,Gcia Nac Serv Opr Distribución,gcia nac serv opr distribucion,203,Intafact Beverages Beer Division,intafact beverages beer division,0.516,raw_fuzzy,yes
+345,Montevideo~2,montevideo 2,38,F. MONTEVIDEO PROD-DC,f montevideo prod dc,0.688,raw_fuzzy,yes
+346,CD Piura,piura,142,Putian (New),putian,0.545,compact_fuzzy,yes
+347,CD Chincha,chincha,39,China_CN01,china cn01,0.588,compact_fuzzy,yes
+348,DC Carleton,carleton,132,Crown,crown,0.615,compact_fuzzy,yes
+349,Santa Fe DC,santa fe dc,109,F. SANTA CRUZ PROD-DC,f santa cruz prod dc,0.900,sort_fuzzy,no
+350,Encarnacion,encarnacion,285,LEYLAND DC PARKINSONS,leyland dc parkinsons,0.500,raw_fuzzy,yes
+351,AMBEV REFRIGERANTES CONTAGEM,ambev refrigerantes contagem,101,AMBEV REFRIGERANTES CONTAGEM,ambev refrigerantes contagem,1.000,raw_exact,no
+352,DC Guanambi,guanambi,117,Panam,panam,0.615,compact_fuzzy,yes
+353,DC Ilheus,ilheus,208,Icheon,icheon,0.500,compact_fuzzy,yes
+354,Kokstad Depot,kokstad depot,119,OELDE Subco POTTs,oelde potts,0.500,compact_fuzzy,yes
+355,Dwarsloop Distributor,dwarsloop distributor,8,Mysore - SPR Distilleries,mysore spr distilleries,0.455,raw_fuzzy,yes
+356,Tangshan 2,tangshan 2,102,Tangshan 2,tangshan 2,1.000,raw_exact,no
+357,DC Hangzhou,hangzhou,263,Zhangzhou,zhangzhou,0.941,compact_fuzzy,no
+358,DC Mokpo,mokpo,230,Motupe,motupe,0.545,compact_fuzzy,yes
+359,DC West Busan,west busan,267,St. Louis,st louis,0.556,compact_fuzzy,yes
+360,Issum,issum,184,Issum - BOPS,issum bops,0.940,substring,no
+361,Conso NL,conso nl,147,Cheongwon,cheongwon,0.588,raw_fuzzy,yes
+362,Panama (Entity),panama,117,Panam,panam,0.940,substring,no
+363,CD Moyobamba,moyobamba,156,Boyaca,boyaca,0.533,compact_fuzzy,yes
+364,Zacatecas_MX,zacatecas mx,103,Zacatecas_MX,zacatecas mx,1.000,raw_exact,no
+365,Cartersville,cartersville,105,Cartersville,cartersville,1.000,raw_exact,no
+366,DC Gatineau,gatineau,58,Ate,ate,0.545,compact_fuzzy,yes
+367,F. ACHERAL PROD-DC,f acheral prod dc,106,F. ACHERAL PROD-DC,f acheral prod dc,1.000,raw_exact,no
+368,F. Nordeste Prod-DC,f nordeste prod dc,137,F. SANTIAGO PROD-DC,f santiago prod dc,0.900,raw_fuzzy,no
+369,Tanzania Breweries Ltd - Moshi Maltings,tanzania breweries ltd moshi maltings,108,Tanzania Breweries Ltd - Moshi Maltings,tanzania breweries ltd moshi maltings,1.000,raw_exact,no
+370,Chamdor Brewery,chamdor brewery,107,Chamdor Brewery,chamdor brewery,1.000,raw_exact,no
+371,Umtata Depot,umtata depot,119,OELDE Subco POTTs,oelde potts,0.522,sort_fuzzy,yes
+372,Witbank Depot,witbank depot,21,Caribe Export (Entity),caribe export,0.538,raw_fuzzy,yes
+373,Central Office-1BCOCOF,central office 1bcocof,83,Mexico Central,mexico central,0.556,sort_fuzzy,yes
+374,Enfield,enfield,62,Enfield - BOPS,enfield bops,0.940,substring,no
+375,F. SANTA CRUZ PROD-DC,f santa cruz prod dc,109,F. SANTA CRUZ PROD-DC,f santa cruz prod dc,1.000,raw_exact,no
+376,Bolivia (Entity),bolivia,259,NBL - Jinja,nbl jinja,0.500,raw_fuzzy,yes
+377,CD Montero,montero,47,Centro,centro,0.625,raw_fuzzy,yes
+378,DC Mooca,mooca,156,Boyaca,boyaca,0.545,compact_fuzzy,yes
+379,Uganda Central,uganda central,111,Uganda Central,uganda central,1.000,raw_exact,no
+380,Newlands Brewery,newlands brewery,110,Newlands Brewery,newlands brewery,1.000,raw_exact,no
+381,Upington Depot,upington depot,147,Cheongwon,cheongwon,0.522,sort_fuzzy,yes
+382,Alrode Depot,alrode depot,21,Caribe Export (Entity),caribe export,0.640,raw_fuzzy,yes
+383,Jiamusi New,jiamusi new,112,Jiamusi New,jiamusi new,1.000,raw_exact,no
+384,DC BUW_HQ,buw hq,19,NBL - HO,nbl ho,0.500,compact_fuzzy,yes
+385,Jishui_PWH,jishui,278,Jishui,jishui,1.000,compact_fuzzy,no
+386,Export from MA~15,export from ma 15,21,Caribe Export (Entity),caribe export,0.850,generic_export,no
+387,Switzerland (Entity),switzerland,20,Shiliang,shiliang,0.526,raw_fuzzy,yes
+388,Atlantico,atlantico,115,Atlantico,atlantico,1.000,raw_exact,no
+389,CD Nazca,nazca,135,Zacapa,zacapa,0.545,compact_fuzzy,yes
+390,OHCO,ohco,196,Port Harcourt,port harcourt,0.471,raw_fuzzy,yes
+391,Export from SA~3,export from sa 3,21,Caribe Export (Entity),caribe export,0.850,generic_export,no
+392,CDR Extrema,extrema,26,Ecuador Central,ecuador central,0.615,raw_fuzzy,yes
+393,DCI Cebrasa,dci cebrasa,157,CERVEJARIA CUIABA,cervejaria cuiaba,0.571,sort_fuzzy,yes
+394,Aliwal North Depot,aliwal north depot,21,Caribe Export (Entity),caribe export,0.516,sort_fuzzy,yes
+395,Baoding_TRPT,baoding,232,Baoding,baoding,1.000,compact_fuzzy,no
+396,DC Changchun,changchun,263,Zhangzhou,zhangzhou,0.667,compact_fuzzy,yes
+397,Foshan_PWH,foshan,239,Foshan,foshan,1.000,compact_fuzzy,no
+398,Xinyang_TRPT,xinyang,182,Xinyang,xinyang,1.000,compact_fuzzy,no
+399,Zhangzhou_PWH,zhangzhou,263,Zhangzhou,zhangzhou,1.000,compact_fuzzy,no
+400,CD1 Beer,cd1 beer,107,Chamdor Brewery,chamdor brewery,0.609,raw_fuzzy,yes
+401,Export from NA~24,export from na 24,21,Caribe Export (Entity),caribe export,0.850,generic_export,no
+402,CERVEJARIA DA BAHIA,cervejaria da bahia,118,CERVEJARIA DA BAHIA,cervejaria da bahia,1.000,raw_exact,no
+403,Swaziland Beverages - Brewing,swaziland beverages brewing,151,Swaziland Beverages - Swazi Breweries,swaziland beverages swazi breweries,0.900,raw_fuzzy,no
+404,Mkuze Distributor,mkuze distributor,8,Mysore - SPR Distilleries,mysore spr distilleries,0.450,raw_fuzzy,yes
+405,Mudanjiang(New)_PWH,mudanjiang,61,Mudanjiang,mudanjiang,1.000,compact_fuzzy,no
+406,Munich_PWH,munich,174,Munich - BOPS,munich bops,0.940,substring,no
+407,WE (Entity),we,41,Wenzhou,wenzhou,0.940,substring,no
+408,La Constancia Water,la constancia water,122,La Constancia Water,la constancia water,1.000,raw_exact,no
+409,Export from MA~36,export from ma 36,21,Caribe Export (Entity),caribe export,0.850,generic_export,no
+410,Casa Plant,casa plant,10,San Juan,san juan,0.556,raw_fuzzy,yes
+411,Tucuman DC,tucuman dc,134,Tocancipa,tocancipa,0.526,raw_fuzzy,yes
+412,Potosi,potosi,283,Imports,imports,0.615,raw_fuzzy,yes
+413,DC Campinas,campinas,135,Zacapa,zacapa,0.571,compact_fuzzy,yes
+414,CDL AS Camacari,cdl as camacari,269,CERVEJARIA AGUAS CLARAS,cervejaria aguas claras,0.526,sort_fuzzy,yes
+415,Vredendal Distributor,vredendal distributor,167,Meerut-Central Distillery-CDBL,meerut central distillery cdbl,0.471,raw_fuzzy,yes
+416,Dachau,dachau,201,Huachipa,huachipa,0.571,raw_fuzzy,yes
+417,Arcen,arcen,54,Arcen - BOPS,arcen bops,0.940,substring,no
+418,Guatemala Central,guatemala central,125,Guatemala Central,guatemala central,1.000,raw_exact,no
+419,CND,cnd,124,CND,cnd,1.000,raw_exact,no
+420,DC San Cristobal,san cristobal,120,HERSTAL JOST WH,herstal jost,0.560,sort_fuzzy,yes
+421,CD LA GRANJA,la granja,259,NBL - Jinja,nbl jinja,0.556,compact_fuzzy,yes
+422,CD Chimbote,chimbote,230,Motupe,motupe,0.571,compact_fuzzy,yes
+423,TXLP,txlp,230,Motupe,motupe,0.400,raw_fuzzy,yes
+424,DC Jaguari,jaguari,52,CERVEJARIA JAGUARIUNA,cervejaria jaguariuna,0.940,substring,no
+425,DC BUNE_HQ,bune hq,188,Korea HQ,korea hq,0.533,compact_fuzzy,yes
+426,Harbin 2_TRPT,harbin 2,40,Harbin 2,harbin 2,1.000,compact_fuzzy,no
+427,Export from NA~19,export from na 19,21,Caribe Export (Entity),caribe export,0.850,generic_export,no
+428,El Salvador (Entity),el salvador,293,El Salvador Central,el salvador central,0.940,substring,no
+429,Chiquinquira,chiquinquira,287,India HQ,india hq,0.600,sort_fuzzy,yes
+430,Export from EU,export from eu,21,Caribe Export (Entity),caribe export,0.850,generic_export,no
+431,DC Gaspe,gaspe,58,Ate,ate,0.500,compact_fuzzy,yes
+432,Coronel Oviedo,coronel oviedo,33,KBL Opaque - Gaborone,kbl opaque gaborone,0.545,sort_fuzzy,yes
+433,F. GOIANIA PROD-DC,f goiania prod dc,23,F. POMPEYA PROD-DC,f pompeya prod dc,0.900,raw_fuzzy,no
+434,F. UBERLANDIA PROD-DC,f uberlandia prod dc,160,C. UBERLANDIA PROD-DC,c uberlandia prod dc,0.950,raw_fuzzy,no
+435,CERVEJARIA MINAS GERAIS,cervejaria minas gerais,128,CERVEJARIA MINAS GERAIS,cervejaria minas gerais,1.000,raw_exact,no
+436,DC Pelotas,pelotas,283,Imports,imports,0.571,compact_fuzzy,yes
+437,DC Sergipe,sergipe,80,VSIP,vsip,0.545,compact_fuzzy,yes
+438,DC Pocos de Caldas,pocos de caldas,119,OELDE Subco POTTs,oelde potts,0.538,sort_fuzzy,yes
+439,Tanzania Breweries Ltd - Dar Brewery,tanzania breweries ltd dar brewery,131,Tanzania Breweries Ltd - Dar Brewery,tanzania breweries ltd dar brewery,1.000,raw_exact,no
+440,Intafact Beverages - Makurdi Depot,intafact beverages makurdi depot,203,Intafact Beverages Beer Division,intafact beverages beer division,0.900,raw_fuzzy,no
+441,Putian (New)_TRPT,putian,142,Putian (New),putian,1.000,compact_fuzzy,no
+442,DC Sejong,sejong,147,Cheongwon,cheongwon,0.556,raw_fuzzy,yes
+443,DC Hapur,hapur,79,SPR,spr,0.500,compact_fuzzy,yes
+444,DC Guwahati,guwahati,2,Guayaquil,guayaquil,0.588,compact_fuzzy,yes
+445,Las Palmas,las palmas,123,Las Palmas - BOPS,las palmas bops,0.940,substring,no
+446,Zacapa,zacapa,135,Zacapa,zacapa,1.000,raw_exact,no
+447,Tocancipa,tocancipa,134,Tocancipa,tocancipa,1.000,raw_exact,no
+448,Curumani,curumani,170,Bucaramanga,bucaramanga,0.526,raw_fuzzy,yes
+449,CD Puerto Maldonado,puerto maldonado,172,Puerto Rico (Entity),puerto rico,0.593,compact_fuzzy,yes
+450,CD Juliaca,juliaca,10,San Juan,san juan,0.533,sort_fuzzy,yes
+451,San Luis Potosi,san luis potosi,267,St. Louis,st louis,0.522,raw_fuzzy,yes
+452,Baldwinsville,baldwinsville,136,Baldwinsville,baldwinsville,1.000,raw_exact,no
+453,COL,col,176,Columbus,columbus,0.940,substring,no
+454,F. SANTIAGO PROD-DC,f santiago prod dc,137,F. SANTIAGO PROD-DC,f santiago prod dc,1.000,raw_exact,no
+455,F. Curitiba Prod-DC,f curitiba prod dc,137,F. SANTIAGO PROD-DC,f santiago prod dc,0.900,raw_fuzzy,no
+456,Maluti Mountain Brewery - Maseru Brewery,maluti mountain brewery maseru brewery,139,Maluti Mountain Brewery - Maseru Brewery,maluti mountain brewery maseru brewery,1.000,raw_exact,no
+457,Ibhayi Brewery,ibhayi brewery,140,Ibhayi Brewery,ibhayi brewery,1.000,raw_exact,no
+458,International Breweries Plc - Ilorin Depot,international breweries plc ilorin depot,231,Swaziland Breweries Limited,swaziland breweries limited,0.507,raw_fuzzy,yes
+459,China_PWH,china,39,China_CN01,china cn01,0.940,compact_fuzzy,no
+460,Shiliang_PWH,shiliang,20,Shiliang,shiliang,1.000,compact_fuzzy,no
+461,Tangshan 2_TRPT,tangshan 2,102,Tangshan 2,tangshan 2,1.000,compact_fuzzy,no
+462,Xiaogan_PWH,xiaogan,182,Xinyang,xinyang,0.571,compact_fuzzy,yes
+463,DC Santiago DR,santiago dr,137,F. SANTIAGO PROD-DC,f santiago prod dc,0.759,sort_fuzzy,no
+464,Export from NA~23,export from na 23,21,Caribe Export (Entity),caribe export,0.850,generic_export,no
+465,Cali,cali,279,CBL,cbl,0.571,raw_fuzzy,yes
+466,Base Motupe T77,base motupe t77,230,Motupe,motupe,0.940,substring,no
+467,Peru (Entity),peru,79,SPR,spr,0.571,raw_fuzzy,yes
+468,CUENCA,cuenca,222,Cusco,cusco,0.545,raw_fuzzy,yes
+469,SANTA ELENA,santa elena,162,Botswana Central,botswana central,0.593,raw_fuzzy,yes
+470,Michoacan,michoacan,208,Icheon,icheon,0.667,raw_fuzzy,yes
+471,Canada (Entity),canada,124,CND,cnd,0.667,raw_fuzzy,yes
+472,C. PONTA GROSSA PROD-DC,c ponta grossa prod dc,141,C. PONTA GROSSA PROD-DC,c ponta grossa prod dc,1.000,raw_exact,no
+473,DC Porto Alegre,porto alegre,21,Caribe Export (Entity),caribe export,0.640,sort_fuzzy,yes
+474,Tanzania Distilleries Ltd - Mbeya Depot,tanzania distilleries ltd mbeya depot,186,Tanzania Distilleries Ltd,tanzania distilleries ltd,0.940,substring,no
+475,Mafikeng Depot,mafikeng depot,21,Caribe Export (Entity),caribe export,0.593,raw_fuzzy,yes
+476,Putian (New),putian,142,Putian (New),putian,1.000,raw_exact,no
+477,DC Jinan,jinan,259,NBL - Jinja,nbl jinja,0.714,sort_fuzzy,yes
+478,Export from APAC,export from apac,21,Caribe Export (Entity),caribe export,0.850,generic_export,no
+479,Central East Europe,central east europe,88,Lesotho Central,lesotho central,0.706,sort_fuzzy,yes
+480,Export from MA~35,export from ma 35,21,Caribe Export (Entity),caribe export,0.850,generic_export,no
+481,CD Cono Sur,cono sur,49,LONDON Prod-DC,london prod dc,0.545,sort_fuzzy,yes
+482,LAGO AGRIO,lago agrio,163,Magor - BOPS,magor bops,0.500,raw_fuzzy,yes
+483,BANDED PEAK BREWERY,banded peak brewery,145,BANDED PEAK BREWERY,banded peak brewery,1.000,raw_exact,no
+484,DC St. Hubert,st hubert,196,Port Harcourt,port harcourt,0.545,compact_fuzzy,yes
+485,Copiapo,copiapo,276,F. PIRAI PROD-DC,f pirai prod dc,0.545,sort_fuzzy,yes
+486,F. JUNDIAI PROD-DC,f jundiai prod dc,23,F. POMPEYA PROD-DC,f pompeya prod dc,0.900,raw_fuzzy,no
+487,Tanzania Breweries Ltd - HO,tanzania breweries ltd ho,186,Tanzania Distilleries Ltd,tanzania distilleries ltd,0.900,raw_fuzzy,no
+488,Putian (New) Craft,putian craft,146,Putian (New) Craft,putian craft,1.000,raw_exact,no
+489,Nanning_PWH,nanning,260,Nanning,nanning,1.000,compact_fuzzy,no
+490,KRHQ,krhq,188,Korea HQ,korea hq,0.667,raw_fuzzy,yes
+491,Cheongwon,cheongwon,147,Cheongwon,cheongwon,1.000,raw_exact,no
+492,DC Gumi,gumi,75,Kunming,kunming,0.545,compact_fuzzy,yes
+493,Belgium (Entity),belgium,184,Issum - BOPS,issum bops,0.471,sort_fuzzy,yes
+494,Leuven_PWH,leuven,235,Leuven - BOPS,leuven bops,0.940,substring,no
+495,Ecuador (Entity),ecuador,26,Ecuador Central,ecuador central,0.940,substring,no
+496,Jacksonville,jacksonville,149,Jacksonville,jacksonville,1.000,raw_exact,no
+497,NWK,nwk,95,Newark,newark,0.667,raw_fuzzy,yes
+498,MONTREAL Prod-DC,montreal prod dc,148,MONTREAL Prod-DC,montreal prod dc,1.000,raw_exact,no
+499,Temuco,temuco,222,Cusco,cusco,0.545,raw_fuzzy,yes
+500,CERVEJARIA COLORADO,cervejaria colorado,150,CERVEJARIA COLORADO,cervejaria colorado,1.000,raw_exact,no
+501,DC Santa Luzia,santa luzia,10,San Juan,san juan,0.632,sort_fuzzy,yes
+502,DC Ipatinga,ipatinga,117,Panam,panam,0.615,compact_fuzzy,yes
+503,DC Joao Monlevade,joao monlevade,171,Hato Nuevo,hato nuevo,0.500,compact_fuzzy,yes
+504,Swaziland Beverages - Swazi Breweries,swaziland beverages swazi breweries,151,Swaziland Beverages - Swazi Breweries,swaziland beverages swazi breweries,1.000,raw_exact,no
+505,Empangeni Depot,empangeni depot,17,F. YPANE PROD-DC,f ypane prod dc,0.533,sort_fuzzy,yes
+506,Polokwane Depot,polokwane depot,242,Polokwane Brewery,polokwane brewery,0.688,raw_fuzzy,yes
+507,Wugang,wugang,152,Wugang,wugang,1.000,raw_exact,no
+508,Export from Korea,export from korea,21,Caribe Export (Entity),caribe export,0.850,generic_export,no
+509,DC Xian,xian,78,Xinxiang,xinxiang,0.940,compact_fuzzy,no
+510,DC Suzhou,suzhou,41,Wenzhou,wenzhou,0.615,compact_fuzzy,yes
+511,Nantong_PWH,nantong,35,Nantong,nantong,1.000,compact_fuzzy,no
+512,Wugang_PWH,wugang,152,Wugang,wugang,1.000,compact_fuzzy,no
+513,Magor,magor,163,Magor - BOPS,magor bops,0.940,substring,no
+514,Export from NA~2,export from na 2,21,Caribe Export (Entity),caribe export,0.850,generic_export,no
+515,CD San Miguel,san miguel,236,Los Angeles,los angeles,0.571,compact_fuzzy,yes
+516,GRAN,gran,152,Wugang,wugang,0.600,raw_fuzzy,yes
+517,LUJAN,lujan,154,LUJAN,lujan,1.000,raw_exact,no
+518,Concepcion - 2,concepcion 2,147,Cheongwon,cheongwon,0.476,raw_fuzzy,yes
+519,Madadeni Distributor,madadeni distributor,186,Tanzania Distilleries Ltd,tanzania distilleries ltd,0.533,raw_fuzzy,yes
+520,Ziyang_PWH,ziyang,273,Ziyang,ziyang,1.000,compact_fuzzy,no
+521,New Zealand (Entity),new zealand,110,Newlands Brewery,newlands brewery,0.519,raw_fuzzy,yes
+522,Jupille,jupille,221,Jupille - BOPS,jupille bops,0.940,substring,no
+523,Gcia Nac Operac Flota,gcia nac operac flota,122,La Constancia Water,la constancia water,0.550,sort_fuzzy,yes
+524,Boyaca,boyaca,156,Boyaca,boyaca,1.000,raw_exact,no
+525,CD Ayacucho,ayacucho,222,Cusco,cusco,0.615,compact_fuzzy,yes
+526,CD Rimac,rimac,15,Merrimack,merrimack,0.940,compact_fuzzy,no
+527,Base Arequipa T77,base arequipa t77,9,Arequipa,arequipa,0.940,substring,no
+528,ESMERALDAS,esmeraldas,292,Honduras Central,honduras central,0.538,sort_fuzzy,yes
+529,Trinidad,trinidad,78,Xinxiang,xinxiang,0.500,raw_fuzzy,yes
+530,CERVEJARIA CUIABA,cervejaria cuiaba,157,CERVEJARIA CUIABA,cervejaria cuiaba,1.000,raw_exact,no
+531,F. MARANHAO PROD-DC,f maranhao prod dc,158,F. MARANHAO PROD-DC,f maranhao prod dc,1.000,raw_exact,no
+532,DC Campina Grande,campina grande,241,F. MINAS PROD-DC,f minas prod dc,0.552,sort_fuzzy,yes
+533,ZX_Bohemia,zx bohemia,32,CERVEJARIA BOHEMIA,cervejaria bohemia,0.571,raw_fuzzy,yes
+534,Prospecton Depot,prospecton depot,206,Prospecton Brewery,prospecton brewery,0.706,raw_fuzzy,yes
+535,Intafact Beverages - Abuja Depot,intafact beverages abuja depot,203,Intafact Beverages Beer Division,intafact beverages beer division,0.900,raw_fuzzy,no
+536,DC BUS_HQ,bus hq,19,NBL - HO,nbl ho,0.500,compact_fuzzy,yes
+537,Export from Others,export from others,21,Caribe Export (Entity),caribe export,0.850,generic_export,no
+538,Intrazone~16,intrazone 16,39,China_CN01,china cn01,0.455,raw_fuzzy,yes
+539,Middle East,middle east,251,Cerv Modelo,cerv modelo,0.455,sort_fuzzy,yes
+540,Panamá,panama,117,Panam,panam,0.940,substring,no
+541,CD Soyapango,soyapango,156,Boyaca,boyaca,0.533,compact_fuzzy,yes
+542,CD Santa Ana,santa ana,10,San Juan,san juan,0.706,compact_fuzzy,yes
+543,Management Operativo T2,management operativo t2,262,Panama Central,panama central,0.486,raw_fuzzy,yes
+544,CD STA ROSA,sta rosa,6,Costa Rica (Entity),costa rica,0.667,raw_fuzzy,yes
+545,Pereira,pereira,9,Arequipa,arequipa,0.533,raw_fuzzy,yes
+546,Puerto Montt,puerto montt,172,Puerto Rico (Entity),puerto rico,0.696,raw_fuzzy,yes
+547,C. UBERLANDIA PROD-DC,c uberlandia prod dc,160,C. UBERLANDIA PROD-DC,c uberlandia prod dc,1.000,raw_exact,no
+548,Botswana Central,botswana central,162,Botswana Central,botswana central,1.000,raw_exact,no
+549,Kuruman Depot,kuruman depot,21,Caribe Export (Entity),caribe export,0.462,raw_fuzzy,yes
+550,SABMiller Namibia North,sabmiller namibia north,220,ABInBev Namibia Okahandja,abinbev namibia okahandja,0.583,raw_fuzzy,yes
+551,Germany (Entity),germany,15,Merrimack,merrimack,0.500,raw_fuzzy,yes
+552,CD JUTICALPA,juticalpa,134,Tocancipa,tocancipa,0.556,compact_fuzzy,yes
+553,CD Talara,talara,72,Guadalajara,guadalajara,0.600,raw_fuzzy,yes
+554,LOJA,loja,154,LUJAN,lujan,0.667,raw_fuzzy,yes
+555,MACHALA,machala,135,Zacapa,zacapa,0.615,raw_fuzzy,yes
+556,DC Lachine,lachine,201,Huachipa,huachipa,0.533,compact_fuzzy,yes
+557,F. CORRIENTES PROD-DC,f corrientes prod dc,164,F. CORRIENTES PROD-DC,f corrientes prod dc,1.000,raw_exact,no
+558,Mercado Central DC,mercado central dc,26,Ecuador Central,ecuador central,0.788,raw_fuzzy,no
+559,F. TARIJA PROD-DC,f tarija prod dc,165,F. TARIJA PROD-DC,f tarija prod dc,1.000,raw_exact,no
+560,DC Araraquara,araraquara,194,Barranquilla,barranquilla,0.636,compact_fuzzy,yes
+561,DC Londrina,londrina,232,Baoding,baoding,0.533,compact_fuzzy,yes
+562,DC Osasco,osasco,222,Cusco,cusco,0.571,raw_fuzzy,yes
+563,Export from Australia,export from australia,21,Caribe Export (Entity),caribe export,0.850,generic_export,no
+564,Tanzania Distilleries Ltd - Mwanza Depot,tanzania distilleries ltd mwanza depot,186,Tanzania Distilleries Ltd,tanzania distilleries ltd,0.940,substring,no
+565,Maputo Brewery,maputo brewery,166,Maputo Brewery,maputo brewery,1.000,raw_exact,no
+566,CAPEREGOFF-1CAREGOFF1,caperegoff 1caregoff1,65,CARDIFF Subco,cardiff,0.471,raw_fuzzy,yes
+567,Export from NA~7,export from na 7,21,Caribe Export (Entity),caribe export,0.850,generic_export,no
+568,Suqian_PWH,suqian,68,Suqian,suqian,1.000,compact_fuzzy,no
+569,Tangshan 2_PWH,tangshan 2,102,Tangshan 2,tangshan 2,1.000,compact_fuzzy,no
+570,Jebsen,jebsen,4,Bremen  Subco ExtWH BLS GVZ,bremen,0.500,compact_fuzzy,yes
+571,HQ Icheon,icheon,208,Icheon,icheon,1.000,compact_fuzzy,no
+572,Meerut-Central Distillery-CDBL,meerut central distillery cdbl,167,Meerut-Central Distillery-CDBL,meerut central distillery cdbl,1.000,raw_exact,no
+573,Fosters,fosters,168,Fosters,fosters,1.000,raw_exact,no
+574,Hato Nuevo,hato nuevo,171,Hato Nuevo,hato nuevo,1.000,raw_exact,no
+575,Puerto Rico (Entity),puerto rico,172,Puerto Rico (Entity),puerto rico,1.000,raw_exact,no
+576,CD1 Nixapa,cd1 nixapa,134,Tocancipa,tocancipa,0.526,raw_fuzzy,yes
+577,Bucaramanga,bucaramanga,170,Bucaramanga,bucaramanga,1.000,raw_exact,no
+578,Metroparque,metroparque,181,Mozambique Central,mozambique central,0.552,sort_fuzzy,yes
+579,Rosario DC,rosario dc,137,F. SANTIAGO PROD-DC,f santiago prod dc,0.643,sort_fuzzy,yes
+580,Export from SA~5,export from sa 5,21,Caribe Export (Entity),caribe export,0.850,generic_export,no
+581,Paraguay (Entity),paraguay,170,Bucaramanga,bucaramanga,0.526,raw_fuzzy,yes
+582,DC Foz do Iguaçu,foz do iguacu,96,F. GUARULHOS PROD-DC,f guarulhos prod dc,0.500,sort_fuzzy,yes
+583,Xinyang_PWH,xinyang,182,Xinyang,xinyang,1.000,compact_fuzzy,no
+584,Yingkou_PWH,yingkou,53,Yingkou,yingkou,1.000,compact_fuzzy,no
+585,Sangareddy - Charminar - CBL,sangareddy charminar cbl,173,Sangareddy - Charminar - CBL,sangareddy charminar cbl,1.000,raw_exact,no
+586,Finland (Entity),finland,182,Xinyang,xinyang,0.571,raw_fuzzy,yes
+587,Leuven,leuven,235,Leuven - BOPS,leuven bops,0.940,substring,no
+588,Export from MA~30,export from ma 30,21,Caribe Export (Entity),caribe export,0.850,generic_export,no
+589,DC Colon,colon,132,Crown,crown,0.600,compact_fuzzy,yes
+590,CD La Unión,la union,115,Atlantico,atlantico,0.588,compact_fuzzy,yes
+591,Export from MA~27,export from ma 27,21,Caribe Export (Entity),caribe export,0.850,generic_export,no
+592,Popayan,popayan,93,Yanji,yanji,0.500,raw_fuzzy,yes
+593,MACAS,macas,103,Zacatecas_MX,zacatecas mx,0.588,sort_fuzzy,yes
+594,Columbus,columbus,176,Columbus,columbus,1.000,raw_exact,no
+595,Fairfield,fairfield,177,Fairfield,fairfield,1.000,raw_exact,no
+596,EDMONTON Prod-DC,edmonton prod dc,175,EDMONTON Prod-DC,edmonton prod dc,1.000,raw_exact,no
+597,Canada National,canada national,111,Uganda Central,uganda central,0.621,raw_fuzzy,yes
+598,Export from EU~20,export from eu 20,21,Caribe Export (Entity),caribe export,0.850,generic_export,no
+599,F. COCHABAMBA PROD-DC,f cochabamba prod dc,178,F. COCHABAMBA PROD-DC,f cochabamba prod dc,1.000,raw_exact,no
+600,Export from MA~19,export from ma 19,21,Caribe Export (Entity),caribe export,0.850,generic_export,no
+601,CERVEJARIA SANTA CATARINA,cervejaria santa catarina,179,CERVEJARIA SANTA CATARINA,cervejaria santa catarina,1.000,raw_exact,no
+602,DC Fortaleza,fortaleza,11,Fort Collins,fort collins,0.476,compact_fuzzy,yes
+603,Wuhan_PWH,wuhan,198,Wuhan,wuhan,1.000,compact_fuzzy,no
+604,Austria (Entity),austria,142,Putian (New),putian,0.615,raw_fuzzy,yes
+605,Export from EU~26,export from eu 26,21,Caribe Export (Entity),caribe export,0.850,generic_export,no
+606,DC Chiriquí,chiriqui,126,Huarochiri,huarochiri,0.556,compact_fuzzy,yes
+607,San Andres,san andres,10,San Juan,san juan,0.667,raw_fuzzy,yes
+608,Santos Lugares DC,santos lugares dc,137,F. SANTIAGO PROD-DC,f santiago prod dc,0.571,raw_fuzzy,yes
+609,DC Campo Grande MS,campo grande ms,141,C. PONTA GROSSA PROD-DC,c ponta grossa prod dc,0.500,raw_fuzzy,yes
+610,Tanzania Breweries Ltd - Ubungo Depot,tanzania breweries ltd ubungo depot,34,Tanzania Breweries Ltd - Mbeya Brewery,tanzania breweries ltd mbeya brewery,0.900,raw_fuzzy,no
+611,Mozambique Central,mozambique central,181,Mozambique Central,mozambique central,1.000,raw_exact,no
+612,Xinyang,xinyang,182,Xinyang,xinyang,1.000,raw_exact,no
+613,DC Gwangju Mokdong,gwangju mokdong,46,Gwangju,gwangju,0.940,compact_fuzzy,no
+614,DC Bavaro,bavaro,156,Boyaca,boyaca,0.500,compact_fuzzy,yes
+615,CD San Salvador,san salvador,293,El Salvador Central,el salvador central,0.581,compact_fuzzy,yes
+616,Gerencia Nacional Distribución,gerencia nacional distribucion,91,CERVEJARIA ANAPOLIS,cervejaria anapolis,0.490,raw_fuzzy,yes
+617,CD ROATAN,roatan,44,Wuhan Craft,wuhan craft,0.588,sort_fuzzy,yes
+618,CD Cusco,cusco,222,Cusco,cusco,1.000,compact_fuzzy,no
+619,Mexico_Transport,mexico transport,83,Mexico Central,mexico central,0.667,raw_fuzzy,yes
+620,Occidente,occidente,47,Centro,centro,0.533,raw_fuzzy,yes
+621,Culiacan,culiacan,68,Suqian,suqian,0.571,raw_fuzzy,yes
+622,DC Sept-Iles,sept iles,267,St. Louis,st louis,0.588,compact_fuzzy,yes
+623,F. CENTRO TECNOLOGICO AMBEV PR,f centro tecnologico ambev pr,185,F. CENTRO TECNOLOGICO AMBEV PR,f centro tecnologico ambev pr,1.000,raw_exact,no
+624,DC Suzano,suzano,68,Suqian,suqian,0.667,compact_fuzzy,yes
+625,Tanzania Distilleries Ltd,tanzania distilleries ltd,186,Tanzania Distilleries Ltd,tanzania distilleries ltd,1.000,raw_exact,no
+626,Wadeville Depot,wadeville depot,21,Caribe Export (Entity),caribe export,0.571,raw_fuzzy,yes
+627,Mauritius Central,mauritius central,187,Mauritius Central,mauritius central,1.000,raw_exact,no
+628,Export from Vietnam,export from vietnam,21,Caribe Export (Entity),caribe export,0.850,generic_export,no
+629,Jiamusi New_TRPT,jiamusi new,112,Jiamusi New,jiamusi new,1.000,compact_fuzzy,no
+630,Korea HQ,korea hq,188,Korea HQ,korea hq,1.000,raw_exact,no
+631,DC Lucknow,lucknow,222,Cusco,cusco,0.533,raw_fuzzy,yes
+632,United Kingdom_TRPT,united kingdom,92,Ningbo,ningbo,0.500,compact_fuzzy,yes
+633,Colombia Central,colombia central,189,Colombia Central,colombia central,1.000,raw_exact,no
+634,Honda,honda,287,India HQ,india hq,0.615,sort_fuzzy,yes
+635,PIFO,pifo,266,Trpico,trpico,0.600,raw_fuzzy,yes
+636,TULCAN,tulcan,154,LUJAN,lujan,0.545,raw_fuzzy,yes
+637,Campeche,campeche,256,Yucateca,yucateca,0.500,raw_fuzzy,yes
+638,CERVEJARIA RIO DE JANEIRO,cervejaria rio de janeiro,191,CERVEJARIA RIO DE JANEIRO,cervejaria rio de janeiro,1.000,raw_exact,no
+639,DC Barreiras,barreiras,9,Arequipa,arequipa,0.588,compact_fuzzy,yes
+640,Rosslyn Brewery,rosslyn brewery,192,Rosslyn Brewery,rosslyn brewery,1.000,raw_exact,no
+641,Queenstown Depot,queenstown depot,27,Houston,houston,0.522,sort_fuzzy,yes
+642,Jinshibai_PWH,jinshibai,100,Jinshibai,jinshibai,1.000,compact_fuzzy,no
+643,Kunming_PWH,kunming,75,Kunming,kunming,1.000,compact_fuzzy,no
+644,Barranquilla,barranquilla,194,Barranquilla,barranquilla,1.000,raw_exact,no
+645,Medellin,medellin,193,Medellin,medellin,1.000,raw_exact,no
+646,CD Motupe,motupe,230,Motupe,motupe,1.000,compact_fuzzy,no
+647,CD Tumbes,tumbes,176,Columbus,columbus,0.588,raw_fuzzy,yes
+648,F. SACABA PROD-DC,f sacaba prod dc,195,F. SACABA PROD-DC,f sacaba prod dc,1.000,raw_exact,no
+649,DC Riberao Preto,riberao preto,172,Puerto Rico (Entity),puerto rico,0.667,sort_fuzzy,yes
+650,DC Jau,jau,154,LUJAN,lujan,0.500,compact_fuzzy,yes
+651,Zambia Breweries - Ndola Brewery,zambia breweries ndola brewery,197,Zambia Breweries - Ndola Brewery,zambia breweries ndola brewery,1.000,raw_exact,no
+652,Port Harcourt,port harcourt,196,Port Harcourt,port harcourt,1.000,raw_exact,no
+653,Wuhan,wuhan,198,Wuhan,wuhan,1.000,raw_exact,no
+654,DC Shenyang,shenyang,182,Xinyang,xinyang,0.667,compact_fuzzy,yes
+655,Aurangabad - PALS Breweries,aurangabad pals breweries,199,Aurangabad - PALS Breweries,aurangabad pals breweries,1.000,raw_exact,no
+656,Goa - John Distilleries,goa john distilleries,286,Goa - John Distilleries,goa john distilleries,1.000,raw_exact,no
+657,Dommelen,dommelen,214,Dommelen - BOPS,dommelen bops,0.940,substring,no
+658,Export from EU~21,export from eu 21,21,Caribe Export (Entity),caribe export,0.850,generic_export,no
+659,DC Darién,darien,40,Harbin 2,harbin 2,0.571,compact_fuzzy,yes
+660,Export from MA~34,export from ma 34,21,Caribe Export (Entity),caribe export,0.850,generic_export,no
+661,La Constancia CSD,la constancia csd,200,La Constancia CSD,la constancia csd,1.000,raw_exact,no
+662,CD2 Barranquilla,cd2 barranquilla,194,Barranquilla,barranquilla,0.940,substring,no
+663,Huachipa,huachipa,201,Huachipa,huachipa,1.000,raw_exact,no
+664,Sonora,sonora,88,Lesotho Central,lesotho central,0.476,raw_fuzzy,yes
+665,JKSV,jksv,215,SVBL,svbl,0.500,raw_fuzzy,yes
+666,ARCHIBALD MICROBRASSERIE,archibald microbrasserie,202,ARCHIBALD MICROBRASSERIE,archibald microbrasserie,1.000,raw_exact,no
+667,DC Trois-Rivieres,trois rivieres,192,Rosslyn Brewery,rosslyn brewery,0.483,compact_fuzzy,yes
+668,Rancagua,rancagua,135,Zacapa,zacapa,0.571,raw_fuzzy,yes
+669,DC Rondonopolis,rondonopolis,214,Dommelen - BOPS,dommelen bops,0.480,compact_fuzzy,yes
+670,Export from EU~24,export from eu 24,21,Caribe Export (Entity),caribe export,0.850,generic_export,no
+671,Intafact Beverages Beer Division,intafact beverages beer division,203,Intafact Beverages Beer Division,intafact beverages beer division,1.000,raw_exact,no
+672,Camden,camden,193,Medellin,medellin,0.571,raw_fuzzy,yes
+673,Samlesbury_PWH,samlesbury,205,Samlesbury - BOPS,samlesbury bops,0.940,substring,no
+674,DC San Francisco,san francisco,209,KBL Opaque - Francistown,kbl opaque francistown,0.579,raw_fuzzy,yes
+675,DC Majagua,majagua,61,Mudanjiang,mudanjiang,0.588,compact_fuzzy,yes
+676,Almacenes Externos T2,almacenes externos t2,99,Zambia Central,zambia central,0.457,raw_fuzzy,yes
+677,CD COLON,colon,132,Crown,crown,0.600,compact_fuzzy,yes
+678,Lima T2,lima t2,267,St. Louis,st louis,0.533,sort_fuzzy,yes
+679,PUYO,puyo,226,MyPhuoc,myphuoc,0.545,raw_fuzzy,yes
+680,Trópico,tropico,266,Trpico,trpico,0.923,raw_fuzzy,no
+681,Guerrero,guerrero,172,Puerto Rico (Entity),puerto rico,0.526,raw_fuzzy,yes
+682,Yacuiba,yacuiba,156,Boyaca,boyaca,0.615,raw_fuzzy,yes
+683,Concon,concon,147,Cheongwon,cheongwon,0.667,raw_fuzzy,yes
+684,DC Maua,maua,9,Arequipa,arequipa,0.500,compact_fuzzy,yes
+685,Prospecton Brewery,prospecton brewery,206,Prospecton Brewery,prospecton brewery,1.000,raw_exact,no
+686,Ladysmith Depot,ladysmith depot,21,Caribe Export (Entity),caribe export,0.500,raw_fuzzy,yes
+687,Nanchang 3,nanchang 3,207,Nanchang 3,nanchang 3,1.000,raw_exact,no
+688,DC BUE_HQ,bue hq,188,Korea HQ,korea hq,0.571,compact_fuzzy,yes
+689,Icheon,icheon,208,Icheon,icheon,1.000,raw_exact,no
+690,Developing Markets,developing markets,51,Kentish - BOPS,kentish bops,0.467,sort_fuzzy,yes
+691,CD San Luis Talpa,san luis talpa,267,St. Louis,st louis,0.636,sort_fuzzy,yes
+692,Export from NA~5,export from na 5,21,Caribe Export (Entity),caribe export,0.850,generic_export,no
+693,Ibague,ibague,273,Ziyang,ziyang,0.500,raw_fuzzy,yes
+694,Sibate,sibate,58,Ate,ate,0.940,substring,no
+695,Apartado,apartado,115,Atlantico,atlantico,0.471,raw_fuzzy,yes
+696,Colombia (Entity),colombia,189,Colombia Central,colombia central,0.940,substring,no
+697,Tuxtepec,tuxtepec,230,Motupe,motupe,0.571,raw_fuzzy,yes
+698,KBL Opaque - Francistown,kbl opaque francistown,209,KBL Opaque - Francistown,kbl opaque francistown,1.000,raw_exact,no
+699,Alrode Brewery,alrode brewery,210,Alrode Brewery,alrode brewery,1.000,raw_exact,no
+700,Greytown Distributor,greytown distributor,286,Goa - John Distilleries,goa john distilleries,0.488,raw_fuzzy,yes
+701,Export from EU~10,export from eu 10,21,Caribe Export (Entity),caribe export,0.850,generic_export,no
+702,Export from MA~29,export from ma 29,21,Caribe Export (Entity),caribe export,0.850,generic_export,no
+703,CD CHOLUTECA,choluteca,256,Yucateca,yucateca,0.588,compact_fuzzy,yes
+704,CD2 Tocancipa,cd2 tocancipa,134,Tocancipa,tocancipa,0.940,substring,no
+705,Ibarra,ibarra,24,NBL - Mbarara,nbl mbarara,0.588,raw_fuzzy,yes
+706,QUEVEDO,quevedo,42,Quito,quito,0.500,raw_fuzzy,yes
+707,Torreón,torreon,159,Torren,torren,0.923,raw_fuzzy,no
+708,Norte,norte,159,Torren,torren,0.545,raw_fuzzy,yes
+709,FFD,ffd,177,Fairfield,fairfield,0.500,raw_fuzzy,yes
+710,MILL STREET BREWERY,mill street brewery,216,MILL STREET BREWERY,mill street brewery,1.000,raw_exact,no
+711,F. MENDOZA PROD-DC,f mendoza prod dc,217,F. MENDOZA PROD-DC,f mendoza prod dc,1.000,raw_exact,no
+712,Uruguay (Entity),uruguay,2,Guayaquil,guayaquil,0.500,raw_fuzzy,yes
+713,Sucre,sucre,79,SPR,spr,0.500,raw_fuzzy,yes
+714,DC Itaperuna,itaperuna,84,Central Per,central per,0.500,compact_fuzzy,yes
+715,DC Rio Branco,rio branco,172,Puerto Rico (Entity),puerto rico,0.571,sort_fuzzy,yes
+716,DC Barueri,barueri,105,Cartersville,cartersville,0.545,raw_fuzzy,yes
+717,DC Piracicaba,piracicaba,48,Pacfico,pacfico,0.588,compact_fuzzy,yes
+718,Makhado Beer Distributor,makhado beer distributor,94,La Constancia Beer,la constancia beer,0.476,sort_fuzzy,yes
+719,ABInBev Namibia Windhoek,abinbev namibia windhoek,220,ABInBev Namibia Okahandja,abinbev namibia okahandja,0.900,raw_fuzzy,no
+720,Ilesa Brewery,ilesa brewery,218,Ilesa Brewery,ilesa brewery,1.000,raw_exact,no
+721,DGO Brex,dgo brex,107,Chamdor Brewery,chamdor brewery,0.522,raw_fuzzy,yes
+722,DC Suncheon,suncheon,208,Icheon,icheon,0.714,compact_fuzzy,yes
+723,Export from MA~13,export from ma 13,21,Caribe Export (Entity),caribe export,0.850,generic_export,no
+724,DC Azua,azua,9,Arequipa,arequipa,0.500,compact_fuzzy,yes
+725,Export from NA~4,export from na 4,21,Caribe Export (Entity),caribe export,0.850,generic_export,no
+726,Girardot,girardot,183,ENTIRIS Aarschot Subco,entiris aarschot,0.500,compact_fuzzy,yes
+727,CD Huancavelica,huancavelica,256,Yucateca,yucateca,0.600,compact_fuzzy,yes
+728,Export from EU~9,export from eu 9,21,Caribe Export (Entity),caribe export,0.850,generic_export,no
+729,ONTA,onta,141,C. PONTA GROSSA PROD-DC,c ponta grossa prod dc,0.940,substring,no
+730,F. BELEM PROD-DC,f belem prod dc,219,F. BELEM PROD-DC,f belem prod dc,1.000,raw_exact,no
+731,Ottery Depot,ottery depot,119,OELDE Subco POTTs,oelde potts,0.522,sort_fuzzy,yes
+732,ABInBev Namibia Okahandja,abinbev namibia okahandja,220,ABInBev Namibia Okahandja,abinbev namibia okahandja,1.000,raw_exact,no
+733,Foshan_TRPT,foshan,239,Foshan,foshan,1.000,compact_fuzzy,no
+734,Shiliang_TRPT,shiliang,20,Shiliang,shiliang,1.000,compact_fuzzy,no
+735,Wuhan_TRPT,wuhan,198,Wuhan,wuhan,1.000,compact_fuzzy,no
+736,DC Gurugram,gurugram,233,Gurdaspur- ABBPL,gurdaspur abbpl,0.522,compact_fuzzy,yes
+737,Sint-Pieters-Leeuw,sint pieters leeuw,133,Sint-Pieters-Leeuw - BOPS,sint pieters leeuw bops,0.940,substring,no
+738,Hoegaarden_PWH,hoegaarden,37,Hoegaarden - BOPS,hoegaarden bops,0.940,substring,no
+739,San Gil,san gil,236,Los Angeles,los angeles,0.556,raw_fuzzy,yes
+740,Cusco,cusco,222,Cusco,cusco,1.000,raw_exact,no
+741,Tranport 77,tranport 77,266,Trpico,trpico,0.471,raw_fuzzy,yes
+742,EL COCA,el coca,200,La Constancia CSD,la constancia csd,0.500,raw_fuzzy,yes
+743,ST. JOHN'S Prod-DC,st john s prod dc,223,ST. JOHN'S Prod-DC,st john s prod dc,1.000,raw_exact,no
+744,Ciudad del Este,ciudad del este,122,La Constancia Water,la constancia water,0.471,sort_fuzzy,yes
+745,Export from SA~1,export from sa 1,21,Caribe Export (Entity),caribe export,0.850,generic_export,no
+746,DC Suji,suji,68,Suqian,suqian,0.600,compact_fuzzy,yes
+747,Ermelo Distributor,ermelo distributor,8,Mysore - SPR Distilleries,mysore spr distilleries,0.488,sort_fuzzy,yes
+748,Namibia Central,namibia central,224,Namibia Central,namibia central,1.000,raw_exact,no
+749,DC Nanjing,nanjing,260,Nanning,nanning,0.857,compact_fuzzy,no
+750,MyPhuoc,myphuoc,226,MyPhuoc,myphuoc,1.000,raw_exact,no
+751,Issum_PWH,issum,184,Issum - BOPS,issum bops,0.940,substring,no
+752,DC Chorrera,chorrera,188,Korea HQ,korea hq,0.625,sort_fuzzy,yes
+753,CD San Rafael Cedros,san rafael cedros,213,Santa Cruz - BOPS,santa cruz bops,0.562,compact_fuzzy,yes
+754,G&W,g and w,111,Uganda Central,uganda central,0.476,raw_fuzzy,yes
+755,Rosario 2 DC,rosario 2 dc,137,F. SANTIAGO PROD-DC,f santiago prod dc,0.600,sort_fuzzy,yes
+756,F. AGUDOS PROD-DC,f agudos prod dc,227,F. AGUDOS PROD-DC,f agudos prod dc,1.000,raw_exact,no
+757,Sagamu Brewery,sagamu brewery,229,Sagamu Brewery,sagamu brewery,1.000,raw_exact,no
+758,DC BUN_HQ,bun hq,287,India HQ,india hq,0.571,compact_fuzzy,yes
+759,Vietnam HQ,vietnam hq,287,India HQ,india hq,0.667,raw_fuzzy,yes
+760,Export from MA~16,export from ma 16,21,Caribe Export (Entity),caribe export,0.850,generic_export,no
+761,DC DGO-H&M,dgo h and m,239,Foshan,foshan,0.471,compact_fuzzy,yes
+762,Samlesbury,samlesbury,205,Samlesbury - BOPS,samlesbury bops,0.940,substring,no
+763,DC San Juan,san juan,10,San Juan,san juan,1.000,compact_fuzzy,no
+764,Motupe,motupe,230,Motupe,motupe,1.000,raw_exact,no
+765,Base Ate T77,base ate t77,58,Ate,ate,0.940,substring,no
+766,PALESTINA,palestina,113,PALS,pals,0.615,raw_fuzzy,yes
+767,DC Quebec,quebec,222,Cusco,cusco,0.429,raw_fuzzy,yes
+768,DC Gunpo,gunpo,222,Cusco,cusco,0.462,raw_fuzzy,yes
+769,Swaziland Breweries Limited,swaziland breweries limited,231,Swaziland Breweries Limited,swaziland breweries limited,1.000,raw_exact,no
+770,Tzaneen Depot,tzaneen depot,17,F. YPANE PROD-DC,f ypane prod dc,0.500,sort_fuzzy,yes
+771,Baoding,baoding,232,Baoding,baoding,1.000,raw_exact,no
+772,Gurdaspur- ABBPL,gurdaspur abbpl,233,Gurdaspur- ABBPL,gurdaspur abbpl,1.000,raw_exact,no
+773,Intrazone~9,intrazone 9,47,Centro,centro,0.471,raw_fuzzy,yes
+774,Italy (Entity),italy,113,PALS,pals,0.444,raw_fuzzy,yes
+775,Export from MA~31,export from ma 31,21,Caribe Export (Entity),caribe export,0.850,generic_export,no
+776,Caucasia,caucasia,256,Yucateca,yucateca,0.500,raw_fuzzy,yes
+777,ZX-V Mex,zx v mex,251,Cerv Modelo,cerv modelo,0.421,raw_fuzzy,yes
+778,AMBEV REFRIGERANTES SAPUCAIA,ambev refrigerantes sapucaia,234,AMBEV REFRIGERANTES SAPUCAIA,ambev refrigerantes sapucaia,1.000,raw_exact,no
+779,DC Nova Iguacu,nova iguacu,59,F. NOVA MINAS PROD-DC,f nova minas prod dc,0.529,raw_fuzzy,yes
+780,Estcourt Distributor,estcourt distributor,8,Mysore - SPR Distilleries,mysore spr distilleries,0.512,sort_fuzzy,yes
+781,Export from China (Foshan),export from china,21,Caribe Export (Entity),caribe export,0.850,generic_export,no
+782,Jingmen,jingmen,259,NBL - Jinja,nbl jinja,0.500,sort_fuzzy,yes
+783,Nanchang3_PWH,nanchang3,207,Nanchang 3,nanchang 3,0.947,compact_fuzzy,no
+784,Nanning_TRPT,nanning,260,Nanning,nanning,1.000,compact_fuzzy,no
+785,Wenzhou(New)_PWH,wenzhou,41,Wenzhou,wenzhou,1.000,compact_fuzzy,no
+786,DC Cheongju,cheongju,208,Icheon,icheon,0.714,compact_fuzzy,yes
+787,DC Incheon,incheon,208,Icheon,icheon,0.923,compact_fuzzy,no
+788,DC Kangreung,kangreung,35,Nantong,nantong,0.500,compact_fuzzy,yes
+789,DC Sacheon,sacheon,208,Icheon,icheon,0.769,compact_fuzzy,no
+790,Import from South Korea,import from south korea,21,Caribe Export (Entity),caribe export,0.850,generic_export,no
+791,Externo,externo,47,Centro,centro,0.615,raw_fuzzy,yes
+792,Export from NA~22,export from na 22,21,Caribe Export (Entity),caribe export,0.850,generic_export,no
+793,CD2 Bucaramanga,cd2 bucaramanga,170,Bucaramanga,bucaramanga,0.940,substring,no
+794,SANTO DOMINGO~1,santo domingo 1,35,Nantong,nantong,0.545,raw_fuzzy,yes
+795,Los Angeles,los angeles,236,Los Angeles,los angeles,1.000,raw_exact,no
+796,F. ZARATE PROD-DC,f zarate prod dc,237,F. ZARATE PROD-DC,f zarate prod dc,1.000,raw_exact,no
+797,Pedro Juan Caballero,pedro juan caballero,63,San Pedro Sula Beer,san pedro sula beer,0.615,raw_fuzzy,yes
+798,DC Jacarepagua,jacarepagua,135,Zacapa,zacapa,0.588,compact_fuzzy,yes
+799,DC Campos,campos,283,Imports,imports,0.615,compact_fuzzy,yes
+800,DC Feira de Santana,feira de santana,137,F. SANTIAGO PROD-DC,f santiago prod dc,0.588,sort_fuzzy,yes
+801,DC Cascavel,cascavel,256,Yucateca,yucateca,0.500,compact_fuzzy,yes
+802,DC Volta Redonda,volta redonda,6,Costa Rica (Entity),costa rica,0.538,raw_fuzzy,yes
+803,DC RJ Campo Grande,rj campo grande,150,CERVEJARIA COLORADO,cervejaria colorado,0.486,raw_fuzzy,yes
+804,Yanji_PWH,yanji,93,Yanji,yanji,1.000,compact_fuzzy,no
+805,DC Indore,indore,92,Ningbo,ningbo,0.500,compact_fuzzy,yes
+806,Santa Cruz,santa cruz,213,Santa Cruz - BOPS,santa cruz bops,0.940,substring,no
+807,Planta Pasadena,planta pasadena,262,Panama Central,panama central,0.552,raw_fuzzy,yes
+808,Management Operativo T1,management operativo t1,262,Panama Central,panama central,0.486,raw_fuzzy,yes
+809,Chihuahua,chihuahua,201,Huachipa,huachipa,0.471,raw_fuzzy,yes
+810,Baja California,baja california,118,CERVEJARIA DA BAHIA,cervejaria da bahia,0.529,sort_fuzzy,yes
+811,Export from NA~16,export from na 16,21,Caribe Export (Entity),caribe export,0.850,generic_export,no
+812,Butterworth Depot,butterworth depot,143,BRUSSELS EXPORT EXT WH,brussels export ext,0.500,compact_fuzzy,yes
+813,Thohoyandou Distributor,thohoyandou distributor,286,Goa - John Distilleries,goa john distilleries,0.500,sort_fuzzy,yes
+814,Foshan,foshan,239,Foshan,foshan,1.000,raw_exact,no
+815,Export from MA~10,export from ma 10,21,Caribe Export (Entity),caribe export,0.850,generic_export,no
+816,HQ Cheongju,cheongju,208,Icheon,icheon,0.714,compact_fuzzy,yes
+817,CD Sonsonate,sonsonate,58,Ate,ate,0.940,compact_fuzzy,no
+818,CD Huánuco,huanuco,171,Hato Nuevo,hato nuevo,0.588,compact_fuzzy,yes
+819,Del Bajio,del bajio,214,Dommelen - BOPS,dommelen bops,0.545,raw_fuzzy,yes
+820,FCL,fcl,279,CBL,cbl,0.667,raw_fuzzy,yes
+821,HALIFAX Prod-DC,halifax prod dc,240,HALIFAX Prod-DC,halifax prod dc,1.000,raw_exact,no
+822,DC Rimouski,rimouski,283,Imports,imports,0.533,compact_fuzzy,yes
+823,DC Riviere-Du-Loup,riviere du loup,265,Diekirch - BOPS,diekirch bops,0.452,raw_fuzzy,yes
+824,F. MINAS PROD-DC,f minas prod dc,241,F. MINAS PROD-DC,f minas prod dc,1.000,raw_exact,no
+825,DC Beltrao,beltrao,47,Centro,centro,0.625,raw_fuzzy,yes
+826,DC Sul SP,sul sp,250,San Pedro Sula CSD,san pedro sula csd,0.519,raw_fuzzy,yes
+827,Polokwane Brewery,polokwane brewery,242,Polokwane Brewery,polokwane brewery,1.000,raw_exact,no
+828,Perserverance Depot,perserverance depot,55,EERSEL DC+repacking,eersel dc repacking,0.526,sort_fuzzy,yes
+829,Standerton Depot,standerton depot,137,F. SANTIAGO PROD-DC,f santiago prod dc,0.529,sort_fuzzy,yes
+830,Central Office-1BCOBIS,central office 1bcobis,162,Botswana Central,botswana central,0.579,sort_fuzzy,yes
+831,Jinzhou_TRPT,jinzhou,69,Jinzhou,jinzhou,1.000,compact_fuzzy,no
+832,Putian (New)_PWH,putian,142,Putian (New),putian,1.000,compact_fuzzy,no
+833,DC Changwon,changwon,147,Cheongwon,cheongwon,0.824,compact_fuzzy,no
+834,DC Gwangju,gwangju,46,Gwangju,gwangju,1.000,compact_fuzzy,no
+835,Hoegaarden,hoegaarden,37,Hoegaarden - BOPS,hoegaarden bops,0.940,substring,no
+836,France (Entity),france,239,Foshan,foshan,0.500,raw_fuzzy,yes
+837,Montería,monteria,15,Merrimack,merrimack,0.588,raw_fuzzy,yes
+838,Morelos,morelos,163,Magor - BOPS,magor bops,0.588,raw_fuzzy,yes
+839,F. MANANTIAL PROD-DC,f manantial prod dc,244,F. MANANTIAL PROD-DC,f manantial prod dc,1.000,raw_exact,no
+840,San Lorenzo,san lorenzo,213,Santa Cruz - BOPS,santa cruz bops,0.538,sort_fuzzy,yes
+841,CERVEJARIA DA AMAZONIA,cervejaria da amazonia,245,CERVEJARIA DA AMAZONIA,cervejaria da amazonia,1.000,raw_exact,no
+842,AC ADM. CENTRAL HQ,ac adm central hq,247,AC ADM. CENTRAL HQ,ac adm central hq,1.000,raw_exact,no
+843,Westonaria Beer Distributor,westonaria beer distributor,186,Tanzania Distilleries Ltd,tanzania distilleries ltd,0.500,raw_fuzzy,yes
+844,Beverage Management Solutions,beverage management solutions,91,CERVEJARIA ANAPOLIS,cervejaria anapolis,0.542,raw_fuzzy,yes
+845,Harbin 2_PWH,harbin 2,40,Harbin 2,harbin 2,1.000,compact_fuzzy,no
+846,DC Jeju,jeju,278,Jishui,jishui,0.400,compact_fuzzy,yes
+847,India HQ,india hq,287,India HQ,india hq,1.000,raw_exact,no
+848,CCH Markets,cch markets,187,Mauritius Central,mauritius central,0.500,sort_fuzzy,yes
+849,DC Azurero,azurero,47,Centro,centro,0.500,raw_fuzzy,yes
+850,CD Chalatenando,chalatenando,58,Ate,ate,0.940,compact_fuzzy,no
+851,CD1 Water,cd1 water,58,Ate,ate,0.940,substring,no
+852,San Pedro Sula CSD,san pedro sula csd,250,San Pedro Sula CSD,san pedro sula csd,1.000,raw_exact,no
+853,CD LA ENTRADA,la entrada,189,Colombia Central,colombia central,0.621,raw_fuzzy,yes
+854,CD TELA,tela,76,Sangareddy - Crown Telangana,sangareddy crown telangana,0.940,substring,no
+855,Cucuta,cucuta,256,Yucateca,yucateca,0.571,raw_fuzzy,yes
+856,Santa Marta,santa marta,24,NBL - Mbarara,nbl mbarara,0.545,raw_fuzzy,yes
+857,Villavicencio,villavicencio,115,Atlantico,atlantico,0.455,raw_fuzzy,yes
+858,Cerv Modelo,cerv modelo,251,Cerv Modelo,cerv modelo,1.000,raw_exact,no
+859,CERVEJARIA DO VALE,cervejaria do vale,252,CERVEJARIA DO VALE,cervejaria do vale,1.000,raw_exact,no
+860,CD Aguas Calientes,aguas calientes,269,CERVEJARIA AGUAS CLARAS,cervejaria aguas claras,0.537,raw_fuzzy,yes
+861,Nelspruit Depot,nelspruit depot,79,SPR,spr,0.940,substring,no
+862,Central Office-1BCOFIN,central office 1bcofin,162,Botswana Central,botswana central,0.579,sort_fuzzy,yes
+863,Export Beer,export beer,21,Caribe Export (Entity),caribe export,0.850,generic_export,no
+864,Dominican Republic Central,dominican republic central,288,Dominican Republic Central,dominican republic central,1.000,raw_exact,no
+865,DC Penonomé,penonome,248,Wenzhou New,wenzhou new,0.526,compact_fuzzy,yes
+866,CD SPS,sps,79,SPR,spr,0.667,compact_fuzzy,yes
+867,CD STA BARBARA,sta barbara,118,CERVEJARIA DA BAHIA,cervejaria da bahia,0.533,sort_fuzzy,yes
+868,Girardota,girardota,183,ENTIRIS Aarschot Subco,entiris aarschot,0.480,compact_fuzzy,yes
+869,Yucateca,yucateca,256,Yucateca,yucateca,1.000,raw_exact,no
+870,Export from MA~8,export from ma 8,21,Caribe Export (Entity),caribe export,0.850,generic_export,no
+871,VIRG,virg,80,VSIP,vsip,0.500,raw_fuzzy,yes
+872,DC Val d'or,val d or,188,Korea HQ,korea hq,0.500,sort_fuzzy,yes
+873,CERVEJARIA MACACU,cervejaria macacu,257,CERVEJARIA MACACU,cervejaria macacu,1.000,raw_exact,no
+874,DC Paranagua,paranagua,117,Panam,panam,0.571,compact_fuzzy,yes
+875,DC Santa Maria,santa maria,6,Costa Rica (Entity),costa rica,0.667,raw_fuzzy,yes
+876,Almacen Externo,almacen externo,47,Centro,centro,0.571,raw_fuzzy,yes
+877,NBL - Jinja,nbl jinja,259,NBL - Jinja,nbl jinja,1.000,raw_exact,no
+878,KBL - Distribution - Francistown,kbl distribution francistown,209,KBL Opaque - Francistown,kbl opaque francistown,0.900,raw_fuzzy,no
+879,Accra Brewery - Head Office,accra brewery head office,258,Accra Brewery - Head Office,accra brewery head office,1.000,raw_exact,no
+880,East London Depot,east london depot,49,LONDON Prod-DC,london prod dc,0.516,raw_fuzzy,yes
+881,Nanning,nanning,260,Nanning,nanning,1.000,raw_exact,no
+882,CHJ,chj,208,Icheon,icheon,0.444,raw_fuzzy,yes
+883,DC IH Hub,ih hub,278,Jishui,jishui,0.500,compact_fuzzy,yes
+884,DC Daejeon,daejeon,208,Icheon,icheon,0.500,raw_fuzzy,yes
+885,DC East Busan,east busan,267,St. Louis,st louis,0.556,compact_fuzzy,yes
+886,Meerut,meerut,167,Meerut-Central Distillery-CDBL,meerut central distillery cdbl,0.940,substring,no
+887,Corozal,corozal,132,Crown,crown,0.500,raw_fuzzy,yes
+888,Fonseca,fonseca,225,Foster,foster,0.615,raw_fuzzy,yes
+889,Riohacha,riohacha,201,Huachipa,huachipa,0.625,raw_fuzzy,yes
+890,CD Iquitos,iquitos,42,Quito,quito,0.940,compact_fuzzy,no
+891,CD Tingo María,tingo maria,61,Mudanjiang,mudanjiang,0.571,sort_fuzzy,yes
+892,MONTECRISTI,montecristi,168,Fosters,fosters,0.556,raw_fuzzy,yes
+893,DC Vitoria,vitoria,42,Quito,quito,0.500,compact_fuzzy,yes
+894,Zambia Breweries - Maltings,zambia breweries maltings,261,Zambia Breweries - Maltings,zambia breweries maltings,1.000,raw_exact,no
+895,ABInBev  Namibia Central,abinbev namibia central,224,Namibia Central,namibia central,0.940,substring,no
+896,Nantong_TRPT,nantong,35,Nantong,nantong,1.000,compact_fuzzy,no
+897,Export from EU~15,export from eu 15,21,Caribe Export (Entity),caribe export,0.850,generic_export,no
+898,Mumbai JNPT - ABI Customs WH,mumbai jnpt abi customs,289,Mumbai JNPT - ABI Customs WH,mumbai jnpt abi customs,1.000,raw_exact,no
+899,Sweden (Entity),sweden,193,Medellin,medellin,0.571,raw_fuzzy,yes
+900,Kentish,kentish,51,Kentish - BOPS,kentish bops,0.940,substring,no
+901,Panama Central,panama central,262,Panama Central,panama central,1.000,raw_exact,no
+902,DC Santiago PN,santiago pn,137,F. SANTIAGO PROD-DC,f santiago prod dc,0.690,compact_fuzzy,yes
+903,CD Arequipa,arequipa,9,Arequipa,arequipa,1.000,compact_fuzzy,no
+904,CD Vegueta,vegueta,26,Ecuador Central,ecuador central,0.480,raw_fuzzy,yes
+905,CD Yurimaguas,yurimaguas,170,Bucaramanga,bucaramanga,0.571,compact_fuzzy,yes
+906,Export from MA~9,export from ma 9,21,Caribe Export (Entity),caribe export,0.850,generic_export,no
+907,DC Paraiba,paraiba,194,Barranquilla,barranquilla,0.526,compact_fuzzy,yes
+908,DC Varginha,varginha,281,CERVECERIA ARGENTINA,cerveceria argentina,0.516,raw_fuzzy,yes
+909,Vereeniging Depot,vereeniging depot,121,Wernigerode - BOPS,wernigerode bops,0.485,raw_fuzzy,yes
+910,International Breweries Plc - Ibadan Depot,international breweries plc ibadan depot,131,Tanzania Breweries Ltd - Dar Brewery,tanzania breweries ltd dar brewery,0.514,raw_fuzzy,yes
+911,Zhangzhou,zhangzhou,263,Zhangzhou,zhangzhou,1.000,raw_exact,no
+912,ICH,ich,208,Icheon,icheon,0.940,substring,no
+913,DC Kyeongin,kyeongin,147,Cheongwon,cheongwon,0.600,raw_fuzzy,yes
+914,MP,mp,283,Imports,imports,0.940,substring,no
+915,Wernigerode,wernigerode,121,Wernigerode - BOPS,wernigerode bops,0.940,substring,no
+916,Belgium_FLEET,belgium fleet,271,Beira Brewery,beira brewery,0.462,raw_fuzzy,yes
+917,Belgium_TRPT,belgium,184,Issum - BOPS,issum bops,0.471,sort_fuzzy,yes
+918,CD PUERTO CORTES,puerto cortes,172,Puerto Rico (Entity),puerto rico,0.750,compact_fuzzy,no
+919,PLAN OPER LOG,plan oper log,262,Panama Central,panama central,0.519,raw_fuzzy,yes
+920,St. Louis,st louis,267,St. Louis,st louis,1.000,raw_exact,no
+921,F. CORDOBA PROD-DC,f cordoba prod dc,268,F. CORDOBA PROD-DC,f cordoba prod dc,1.000,raw_exact,no
+922,CERVEJARIA AGUAS CLARAS,cervejaria aguas claras,269,CERVEJARIA AGUAS CLARAS,cervejaria aguas claras,1.000,raw_exact,no
+923,DC Niteroi,niteroi,47,Centro,centro,0.625,raw_fuzzy,yes
+924,Beira Brewery,beira brewery,271,Beira Brewery,beira brewery,1.000,raw_exact,no
+925,Ghana Central,ghana central,270,Ghana Central,ghana central,1.000,raw_exact,no
+926,South Africa Central,south africa central,272,South Africa Central,south africa central,1.000,raw_exact,no
+927,Ziyang,ziyang,273,Ziyang,ziyang,1.000,raw_exact,no
+928,Nanchang3_TRPT,nanchang3,207,Nanchang 3,nanchang 3,0.947,compact_fuzzy,no
+929,DC Osan,osan,239,Foshan,foshan,0.800,compact_fuzzy,no
+930,Denmark (Entity),denmark,95,Newark,newark,0.615,raw_fuzzy,yes
+931,DC Las Sabanas,las sabanas,236,Los Angeles,los angeles,0.545,compact_fuzzy,yes
+932,CD Usulután,usulutan,154,LUJAN,lujan,0.615,compact_fuzzy,yes
+933,Pacífico,pacifico,48,Pacfico,pacfico,0.933,raw_fuzzy,no
+934,DC Cap-Aux-Meules,cap aux meules,236,Los Angeles,los angeles,0.480,compact_fuzzy,yes
+935,F. HUARI PROD-DC,f huari prod dc,274,F. HUARI PROD-DC,f huari prod dc,1.000,raw_exact,no
+936,F. LA PAZ PROD-DC,f la paz prod dc,275,F. LA PAZ PROD-DC,f la paz prod dc,1.000,raw_exact,no
+937,Talca,talca,135,Zacapa,zacapa,0.545,raw_fuzzy,yes
+938,F. PIRAI PROD-DC,f pirai prod dc,276,F. PIRAI PROD-DC,f pirai prod dc,1.000,raw_exact,no
+939,DC Caxias,caxias,134,Tocancipa,tocancipa,0.533,compact_fuzzy,yes
+940,DC Colider,colider,11,Fort Collins,fort collins,0.526,sort_fuzzy,yes
+941,KBL - Distribution - Gaborone,kbl distribution gaborone,33,KBL Opaque - Gaborone,kbl opaque gaborone,0.900,raw_fuzzy,no
+942,Cervejas de Mocambique - Marracuene Brewery,cervejas de mocambique marracuene brewery,277,Cervejas de Mocambique - Marracuene Brewery,cervejas de mocambique marracuene brewery,1.000,raw_exact,no
+943,Bethlehem Depot,bethlehem depot,219,F. BELEM PROD-DC,f belem prod dc,0.600,sort_fuzzy,yes
+944,Chamdor Depot,chamdor depot,107,Chamdor Brewery,chamdor brewery,0.643,raw_fuzzy,yes
+945,Jishui,jishui,278,Jishui,jishui,1.000,raw_exact,no
+946,Wugang_TRPT,wugang,152,Wugang,wugang,1.000,compact_fuzzy,no
+947,Intrazone~11,intrazone 11,39,China_CN01,china cn01,0.455,raw_fuzzy,yes
+948,Intrazone~12,intrazone 12,39,China_CN01,china cn01,0.455,raw_fuzzy,yes
+949,Sonipat,sonipat,28,Sonipat-Harayana Breweries-HBL,sonipat harayana breweries hbl,0.940,substring,no
+950,DC Delhi,delhi,193,Medellin,medellin,0.615,compact_fuzzy,yes
+951,Wernigerode_PWH,wernigerode,121,Wernigerode - BOPS,wernigerode bops,0.940,substring,no
+952,Export from MA~26,export from ma 26,21,Caribe Export (Entity),caribe export,0.850,generic_export,no
+953,Base Pucallpa NAO,base pucallpa nao,13,Nampula Brewery,nampula brewery,0.500,sort_fuzzy,yes
+954,AMBATO,ambato,99,Zambia Central,zambia central,0.500,raw_fuzzy,yes
+955,DC Terrebonne,terrebonne,159,Torren,torren,0.625,compact_fuzzy,yes
+956,Export from MA~7,export from ma 7,21,Caribe Export (Entity),caribe export,0.850,generic_export,no
+957,DC Mont-Laurier,mont laurier,230,Motupe,motupe,0.556,compact_fuzzy,yes
+958,F. QUILMES PROD-DC,f quilmes prod dc,280,F. QUILMES PROD-DC,f quilmes prod dc,1.000,raw_exact,no
+959,CERVECERIA ARGENTINA,cerveceria argentina,281,CERVECERIA ARGENTINA,cerveceria argentina,1.000,raw_exact,no
+960,DC Diadema,diadema,256,Yucateca,yucateca,0.444,raw_fuzzy,yes
+961,DC Praia Grande,praia grande,150,CERVEJARIA COLORADO,cervejaria colorado,0.529,raw_fuzzy,yes
+962,DC Lapa,lapa,135,Zacapa,zacapa,0.615,raw_fuzzy,yes
+963,NESA,nesa,95,Newark,newark,0.600,raw_fuzzy,yes
