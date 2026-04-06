@@ -54,11 +54,16 @@ def _paste_fit_width(canvas: Image.Image, image: Image.Image, left: int, right: 
 
 
 def _draw_section_title(draw: ImageDraw.ImageDraw, title: str, top: int) -> None:
-    draw.rounded_rectangle((MARGIN_X, top, CANVAS_WIDTH - MARGIN_X, top + PILL_HEIGHT), radius=20, fill="#ffc20e")
+    line_top = top + (PILL_HEIGHT // 2) - 6
+    draw.rounded_rectangle((MARGIN_X, line_top, CANVAS_WIDTH - MARGIN_X, line_top + 12), radius=6, fill="#111111")
     font = _font(62, bold=True)
     bbox = draw.textbbox((0, 0), title, font=font)
     text_width = bbox[2] - bbox[0]
     text_height = bbox[3] - bbox[1]
+    pill_width = max(text_width + 110, 420)
+    pill_left = (CANVAS_WIDTH - pill_width) // 2
+    pill_right = pill_left + pill_width
+    draw.rounded_rectangle((pill_left, top, pill_right, top + PILL_HEIGHT), radius=20, fill="#ffc20e")
     text_x = (CANVAS_WIDTH - text_width) // 2
     text_y = top + (PILL_HEIGHT - text_height) // 2 - 4
     draw.text((text_x, text_y), title, fill="#111111", font=font)
@@ -124,6 +129,9 @@ def _two_up_row(canvas: Image.Image, left_image: Image.Image, right_image: Image
     right_box = (MARGIN_X + half_width + CHART_GAP, top, CANVAS_WIDTH - MARGIN_X, top + CHART_ROW_HEIGHT)
     _paste_contained(canvas, left_image, left_box)
     _paste_contained(canvas, right_image, right_box)
+    divider_x = MARGIN_X + half_width + (CHART_GAP // 2)
+    draw = ImageDraw.Draw(canvas)
+    draw.line((divider_x, top + 12, divider_x, top + CHART_ROW_HEIGHT - 12), fill="#111111", width=8)
 
 
 def _single_row(canvas: Image.Image, image: Image.Image, top: int) -> None:
@@ -151,7 +159,7 @@ def export_png_from_assets(month_display: str, year_display: str, image_paths: d
     _two_up_row(canvas, _load_rgba(image_paths["mtd_vic_price_mtd.png"]), _load_rgba(image_paths["mtd_vic_price_ytd.png"]), current_top)
     current_top += CHART_ROW_HEIGHT + ROW_GAP
 
-    _draw_section_title(draw, "MTD/YTD Package Level Breakdown", current_top)
+    _draw_section_title(draw, "MTD vs BGT category by Zone ($Mio)", current_top)
     current_top += PILL_HEIGHT + SECTION_GAP
     _two_up_row(canvas, _load_rgba(image_paths["mtd_category_mtd.png"]), _load_rgba(image_paths["mtd_category_ytd.png"]), current_top)
     current_top += CHART_ROW_HEIGHT + ROW_GAP + 20

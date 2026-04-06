@@ -11,8 +11,8 @@ from app.services.aggregation_service import aggregate_for_chart
 from app.utils import fmt_million
 
 
-POSITIVE = "#c62828"
-NEGATIVE = "#2e7d32"
+POSITIVE = "#2e7d32"
+NEGATIVE = "#c62828"
 NEGATIVE_LAST = "#2e7d32"
 TOTAL = "#757575"
 NEUTRAL = "#546e7a"
@@ -136,7 +136,7 @@ def build_waterfall_figure(
             measure=["relative"] * len(values) + ["total"],
             x=labels + [total_label],
             y=values + [total],
-            connector={"line": {"color": "rgba(70, 70, 70, 0.25)"}},
+            connector={"line": {"color": "rgba(0, 0, 0, 0)", "width": 0}},
             increasing={"marker": {"color": POSITIVE}},
             decreasing={"marker": {"color": NEGATIVE}},
             totals={"marker": {"color": TOTAL}},
@@ -146,7 +146,7 @@ def build_waterfall_figure(
         )
     )
     fig.update_layout(
-        title=dict(text=title, font=dict(size=PLOTLY_TITLE_SIZE, color="#111111"), x=0.02, xanchor="left"),
+        title=dict(text=f"<b>{title}</b>", font=dict(size=PLOTLY_TITLE_SIZE, color="#111111"), x=0.5, xanchor="center"),
         height=1000,
         margin=dict(t=170, b=260, l=45, r=45),
         showlegend=False,
@@ -200,7 +200,7 @@ def build_breakdown_bar_figure(
         )
     )
     fig.update_layout(
-        title=dict(text=title, font=dict(size=PLOTLY_TITLE_SIZE, color="#111111"), x=0.02, xanchor="left"),
+        title=dict(text=f"<b>{title}</b>", font=dict(size=PLOTLY_TITLE_SIZE, color="#111111"), x=0.5, xanchor="center"),
         height=1000,
         margin=dict(t=170, b=260, l=45, r=45),
         showlegend=False,
@@ -320,7 +320,7 @@ def build_zone_package_matrix_figure(
         values = display[zone].astype(float).to_numpy()
         colors = [POSITIVE if value > 0.1 else NEGATIVE if value < 0 else TOTAL for value in values]
         ax.barh(y_positions, values, color=colors, height=0.52)
-        ax.axvline(0, color="#bdbdbd", linewidth=1.2, zorder=0)
+        ax.axvline(0, color="#111111", linewidth=2.8, zorder=0)
         _draw_row_dividers(ax, len(y_positions))
         ax.set_xlim(-max_x * 1.15, max_x * 1.15)
         ax.set_ylim(-0.5, len(y_positions) - 0.5)
@@ -339,6 +339,5 @@ def build_zone_package_matrix_figure(
             ha = "left" if value > 0 else "right"
             ax.text(x_pos, y_pos, f"{value:.1f}", va="center", ha=ha, fontsize=MATRIX_VALUE_LABEL_SIZE, fontweight="bold", color="#111111")
 
-    fig.suptitle(title, x=0.01, ha="left", fontsize=MATRIX_TITLE_SIZE, fontweight="bold", color="#111111")
     fig.subplots_adjust(left=0.02, right=0.995, top=0.9, bottom=0.04)
     return fig

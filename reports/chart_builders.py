@@ -95,7 +95,7 @@ def build_mtd_category_ytd(month, year, df: pd.DataFrame | None = None) -> go.Fi
 
 def build_mtd_zone_table(month, year, df: pd.DataFrame | None = None) -> matplotlib.figure.Figure:
     report_df = _get_df(month, year, df)
-    return _build_zone_table(report_df, "MTH_Price", "MTD vs BGT package by Zone ($Mio)")
+    return _build_zone_table(report_df, "MTH_Price", "MTD vs BGT category by Zone ($Mio)")
 
 
 def report_title_context(month, year) -> dict[str, str]:
