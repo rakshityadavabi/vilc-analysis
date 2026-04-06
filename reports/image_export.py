@@ -54,8 +54,8 @@ def _paste_fit_width(canvas: Image.Image, image: Image.Image, left: int, right: 
 
 
 def _draw_section_title(draw: ImageDraw.ImageDraw, title: str, top: int) -> None:
-    line_top = top + (PILL_HEIGHT // 2) - 6
-    draw.rounded_rectangle((MARGIN_X, line_top, CANVAS_WIDTH - MARGIN_X, line_top + 12), radius=6, fill="#111111")
+    line_top = top + (PILL_HEIGHT // 2) - 3
+    draw.rounded_rectangle((MARGIN_X, line_top, CANVAS_WIDTH - MARGIN_X, line_top + 6), radius=3, fill="#111111")
     font = _font(62, bold=True)
     bbox = draw.textbbox((0, 0), title, font=font)
     text_width = bbox[2] - bbox[0]
@@ -131,7 +131,7 @@ def _two_up_row(canvas: Image.Image, left_image: Image.Image, right_image: Image
     _paste_contained(canvas, right_image, right_box)
     divider_x = MARGIN_X + half_width + (CHART_GAP // 2)
     draw = ImageDraw.Draw(canvas)
-    draw.line((divider_x, top + 12, divider_x, top + CHART_ROW_HEIGHT - 12), fill="#111111", width=8)
+    draw.line((divider_x, top + 12, divider_x, top + CHART_ROW_HEIGHT - 12), fill="#111111", width=4)
 
 
 def _single_row(canvas: Image.Image, image: Image.Image, top: int) -> None:

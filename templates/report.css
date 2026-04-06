@@ -118,7 +118,7 @@ body {
   left: 0;
   right: 0;
   top: 52px;
-  height: 12px;
+  height: 6px;
   background: #111111;
   border-radius: 999px;
 }
@@ -149,7 +149,7 @@ body {
 }
 
 .chart-row.two-col .chart-card:first-child {
-  border-right: 8px solid #111111;
+  border-right: 4px solid #111111;
 }
 
 .chart-row.compact {
