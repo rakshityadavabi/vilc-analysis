@@ -10,6 +10,11 @@ import plotly.graph_objects as go
 from PIL import Image
 
 from .chart_builders import (
+    build_mtd_perf_category_mtd,
+    build_mtd_perf_category_ytd,
+    build_mtd_perf_mtd,
+    build_mtd_perf_ytd,
+    build_mtd_perf_zone_table,
     build_mtd_category_mtd,
     build_mtd_category_ytd,
     build_mtd_vic_pp_mtd,
@@ -29,6 +34,14 @@ REPORT_IMAGE_SPECS: list[tuple[str, Callable[..., object], dict]] = [
     ("mtd_category_mtd.png", build_mtd_category_mtd, {"kind": "plotly", "width": 2800, "height": 1800, "scale": 2}),
     ("mtd_category_ytd.png", build_mtd_category_ytd, {"kind": "plotly", "width": 2800, "height": 1800, "scale": 2}),
     ("mtd_zone_table.png", build_mtd_zone_table, {"kind": "matplotlib", "dpi": 320}),
+]
+
+PERFORMANCE_IMAGE_SPECS: list[tuple[str, Callable[..., object], dict]] = [
+    ("mtd_perf_mtd.png", build_mtd_perf_mtd, {"kind": "plotly", "width": 2800, "height": 1800, "scale": 2}),
+    ("mtd_perf_ytd.png", build_mtd_perf_ytd, {"kind": "plotly", "width": 2800, "height": 1800, "scale": 2}),
+    ("mtd_perf_category_mtd.png", build_mtd_perf_category_mtd, {"kind": "plotly", "width": 2800, "height": 1800, "scale": 2}),
+    ("mtd_perf_category_ytd.png", build_mtd_perf_category_ytd, {"kind": "plotly", "width": 2800, "height": 1800, "scale": 2}),
+    ("mtd_perf_zone_table.png", build_mtd_perf_zone_table, {"kind": "matplotlib", "dpi": 320}),
 ]
 
 REQUIRED_IMAGE_FILENAMES = [filename for filename, _, _ in REPORT_IMAGE_SPECS]
@@ -54,11 +67,11 @@ def save_figure(fig, path: Path, spec: dict) -> None:
         raise ValueError(f"Unsupported figure kind: {kind}")
 
 
-def validate_images(image_paths: dict[str, Path]) -> None:
+def validate_images(image_paths: dict[str, Path], required_filenames: list[str]) -> None:
     missing: list[str] = []
     corrupted: list[str] = []
 
-    for filename in REQUIRED_IMAGE_FILENAMES:
+    for filename in required_filenames:
         path = image_paths.get(filename)
         if path is None or not path.exists() or path.stat().st_size <= 0:
             missing.append(filename)
@@ -78,17 +91,31 @@ def validate_images(image_paths: dict[str, Path]) -> None:
         raise RuntimeError("\n".join(lines))
 
 
-def export_all_report_graphs(month, year, output_dir: str | Path = "generated/images", df: pd.DataFrame | None = None) -> dict[str, Path]:
+def _export_report_graphs(
+    month,
+    year,
+    output_dir: str | Path,
+    df: pd.DataFrame | None,
+    image_specs: list[tuple[str, Callable[..., object], dict]],
+) -> dict[str, Path]:
     report_df = df if df is not None else load_report_dataframe(month, year)
     output_path = Path(output_dir)
     output_path.mkdir(parents=True, exist_ok=True)
 
     image_paths: dict[str, Path] = {}
-    for filename, builder, spec in REPORT_IMAGE_SPECS:
+    for filename, builder, spec in image_specs:
         fig = builder(month, year, df=report_df)
         file_path = output_path / filename
         save_figure(fig, file_path, spec)
         image_paths[filename] = file_path
 
-    validate_images(image_paths)
+    validate_images(image_paths, [filename for filename, _, _ in image_specs])
     return image_paths
+
+
+def export_all_report_graphs(month, year, output_dir: str | Path = "generated/images", df: pd.DataFrame | None = None) -> dict[str, Path]:
+    return _export_report_graphs(month, year, output_dir, df, REPORT_IMAGE_SPECS)
+
+
+def export_all_performance_report_graphs(month, year, output_dir: str | Path = "generated/performance_images", df: pd.DataFrame | None = None) -> dict[str, Path]:
+    return _export_report_graphs(month, year, output_dir, df, PERFORMANCE_IMAGE_SPECS)
