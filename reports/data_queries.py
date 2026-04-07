@@ -60,7 +60,11 @@ def normalize_report_period(month, year) -> tuple[str, str, str]:
 def _request_payload(month, year, month_label: str, year_label: str) -> dict:
     return {
         "mode": "MTD",
-        "filters": {"Year": [year_label], "Month": [month_label]},
+        "filters": {
+            "Year": [year_label],
+            "Month": [month_label],
+            "_exclude": {"Country": ["Argentina"]},
+        },
         "drill_path": {},
         "query_backend": "Databricks",
     }

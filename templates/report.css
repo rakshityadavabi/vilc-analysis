@@ -30,77 +30,31 @@ body {
   padding: 0 10px 18px;
 }
 
-.hero {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  min-height: 188px;
-  padding: 0 0 8px;
-  position: relative;
+.report-banner {
+  margin-bottom: 16px;
 }
 
-.hero-copy {
-  flex: 1;
-  background: linear-gradient(180deg, #ffc92f 0%, #ffc92f 72%, rgba(255, 201, 47, 0.15) 100%);
-  border-radius: 0 0 42px 0;
-  padding: 22px 24px 24px;
+.report-period {
+  margin: 0 0 8px;
+  font-size: 22px;
+  font-weight: 800;
+  letter-spacing: 0.01em;
+  color: var(--ink);
+}
+
+.header-art,
+.footer-art {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.header-art {
   box-shadow: 0 10px 24px var(--shadow);
 }
 
-.hero-date {
-  width: 260px;
-  min-height: 78px;
-  margin-right: 18px;
-  background: #fff2bf;
-  border-radius: 18px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 25px;
-  font-weight: 800;
-  color: #6d4c00;
-  box-shadow: 0 10px 24px var(--shadow);
-}
-
-.hero-title {
-  font-size: 40px;
-  font-weight: 800;
-  line-height: 1.05;
-  letter-spacing: -0.03em;
-  text-align: center;
-}
-
-.hero-logo {
-  width: 28%;
-  display: flex;
-  justify-content: flex-end;
-}
-
-.hero-logo-mark {
-  width: 140px;
-  min-height: 180px;
-  border-radius: 48px 0 0 48px;
-  background: linear-gradient(180deg, #4b4b4b 0%, #202020 80%, #7a7a7a 100%);
-  color: white;
-  padding: 18px 16px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-}
-
-.hero-logo-icon {
-  font-size: 28px;
-  color: #ffc92f;
-  font-weight: 800;
-  margin-bottom: 10px;
-}
-
-.hero-logo-text {
-  font-size: 26px;
-  line-height: 0.95;
-  font-weight: 800;
+.report-footer {
+  margin-top: 18px;
 }
 
 .report-section {
@@ -181,21 +135,6 @@ body {
 
 .matrix-section {
   margin-top: 6px;
-}
-
-.report-footer {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-top: 18px;
-  padding: 14px 8px 4px;
-  color: var(--muted);
-  font-size: 12px;
-}
-
-.footer-center {
-  color: #c89d00;
-  font-weight: 700;
 }
 
 @media print {
