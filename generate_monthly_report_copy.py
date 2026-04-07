@@ -139,7 +139,7 @@ def _build_html_body(month: str, year: str, body_text: str, content_id: str) -> 
       <body style="margin:0; padding:24px; font-family:Arial, sans-serif; font-size:14px; color:#222222; background-color:#ffffff;">
         <div style="max-width:1200px; margin:0 auto;">
           {intro_html}
-          <div style="margin-top:16px; margin-bottom:12px; font-weight:700; font-size:16px;">
+          <div style="margin-top:16px; margin-bottom:12px; font-weight:700; font-size:12px;">
             Monthly report
           </div>
           <div style="border:1px solid #d9d9d9; padding:8px; background:#fafafa; text-align:center;">
