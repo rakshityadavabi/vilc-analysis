@@ -225,6 +225,14 @@ class PerformanceQueryBuilder:
         return f"{qcol} IN ({escaped})"
 
     @staticmethod
+    def _not_in_clause(column: str, values: list) -> str:
+        qcol = PerformanceQueryBuilder._quote_col(column)
+        if len(values) == 1:
+            return f"{qcol} <> {PerformanceQueryBuilder._escape(values[0])}"
+        escaped = ", ".join(PerformanceQueryBuilder._escape(v) for v in values)
+        return f"{qcol} NOT IN ({escaped})"
+
+    @staticmethod
     def _scaled_sum_expr(column: str) -> str:
         qcol = PerformanceQueryBuilder._quote_col(column)
         return f"SUM(CAST({qcol} AS DOUBLE)) / 1000 AS {qcol}"
@@ -294,6 +302,14 @@ class PerformanceQueryBuilder:
         year_vals = self._to_list(filters.get(year_col) or filters.get("Year"))
         if year_vals:
             where_parts.append(self._in_clause(year_col, year_vals))
+
+        exclude_filters = filters.get("_exclude") or filters.get("exclude") or {}
+        if isinstance(exclude_filters, dict):
+            for col, vals in exclude_filters.items():
+                resolved_vals = self._to_list(vals)
+                mapped_col = _resolve(col)
+                if mapped_col and resolved_vals:
+                    where_parts.append(self._not_in_clause(mapped_col, resolved_vals))
 
         if ytd_mode:
             if ytd_last_month:
@@ -380,6 +396,13 @@ class PerformanceQueryBuilder:
         if year_vals:
             where_parts.append(self._in_clause("Year", year_vals))
 
+        exclude_filters = filters.get("_exclude") or filters.get("exclude") or {}
+        if isinstance(exclude_filters, dict):
+            for col, vals in exclude_filters.items():
+                resolved_vals = self._to_list(vals)
+                if resolved_vals:
+                    where_parts.append(self._not_in_clause(col, resolved_vals))
+
         if ytd_mode:
             if ytd_last_month:
                 where_parts.append(self._in_clause("Month", [ytd_last_month]))
@@ -431,6 +454,13 @@ class PerformanceQueryBuilder:
         year_vals = self._to_list(filters.get("Year"))
         if year_vals:
             where_parts.append(self._in_clause("Year", year_vals))
+
+        exclude_filters = filters.get("_exclude") or filters.get("exclude") or {}
+        if isinstance(exclude_filters, dict):
+            for col, vals in exclude_filters.items():
+                resolved_vals = self._to_list(vals)
+                if resolved_vals:
+                    where_parts.append(self._not_in_clause(col, resolved_vals))
 
         if ytd_mode:
             if ytd_last_month:

@@ -6,7 +6,7 @@ from PIL import Image, ImageDraw, ImageFont, ImageOps
 
 
 CANVAS_WIDTH = 3200
-CANVAS_HEIGHT = 13000
+CANVAS_HEIGHT = 14500
 MARGIN_X = 110
 TOP_MARGIN = 38
 HEADER_HEIGHT = 210
@@ -16,6 +16,8 @@ ROW_GAP = 56
 CHART_ROW_HEIGHT = 1150
 CHART_GAP = 56
 FOOTER_HEIGHT = 56
+HEADER_ART_PATH = Path(__file__).resolve().parents[1] / "header.png"
+FOOTER_ART_PATH = Path(__file__).resolve().parents[1] / "Footer.png"
 
 
 def _font(size: int, bold: bool = False) -> ImageFont.FreeTypeFont | ImageFont.ImageFont:
@@ -109,6 +111,28 @@ def _draw_header(draw: ImageDraw.ImageDraw, month_display: str, year_display: st
     draw.multiline_text((logo_x + 52, logo_y + 44), "PSP\nTECH", fill="#ffffff", font=logo_font, spacing=-8, align="center")
 
 
+def _draw_banner_art(canvas: Image.Image, month_display: str, year_display: str) -> int:
+    draw = ImageDraw.Draw(canvas)
+    meta_font = _font(36, bold=True)
+    date_text = f"{month_display}, {year_display}"
+    date_box = (MARGIN_X, TOP_MARGIN, MARGIN_X + 320, TOP_MARGIN + 78)
+    draw.rounded_rectangle(date_box, radius=18, fill="#fff2bf")
+
+    date_bbox = draw.textbbox((0, 0), date_text, font=meta_font)
+    date_width = date_bbox[2] - date_bbox[0]
+    date_height = date_bbox[3] - date_bbox[1]
+    date_x = int(date_box[0] + (date_box[2] - date_box[0] - date_width) / 2)
+    date_y = int(date_box[1] + (date_box[3] - date_box[1] - date_height) / 2 - 4)
+    draw.text((date_x, date_y), date_text, fill="#7a5a00", font=meta_font)
+
+    header_art = _load_rgba(HEADER_ART_PATH)
+    banner_top = TOP_MARGIN + 92
+    banner_left = MARGIN_X
+    banner_right = CANVAS_WIDTH - MARGIN_X
+    _paste_fit_width(canvas, header_art, banner_left, banner_right, banner_top)
+    return banner_top + _fit_width_height(header_art)
+
+
 def _draw_footer(draw: ImageDraw.ImageDraw) -> None:
     footer_font = _font(22, bold=False)
     footer_y = CANVAS_HEIGHT - 64
@@ -121,6 +145,15 @@ def _draw_footer(draw: ImageDraw.ImageDraw) -> None:
     right_bbox = draw.textbbox((0, 0), right_text, font=footer_font)
     right_width = right_bbox[2] - right_bbox[0]
     draw.text((CANVAS_WIDTH - MARGIN_X - right_width, footer_y), right_text, fill="#c89d00", font=footer_font)
+
+
+def _draw_footer_art(canvas: Image.Image) -> None:
+    footer_art = _load_rgba(FOOTER_ART_PATH)
+    footer_width = CANVAS_WIDTH - 2 * MARGIN_X
+    scale = footer_width / float(footer_art.width)
+    footer_height = max(1, int(round(footer_art.height * scale)))
+    footer_top = CANVAS_HEIGHT - footer_height - 40
+    _paste_fit_width(canvas, footer_art, MARGIN_X, CANVAS_WIDTH - MARGIN_X, footer_top)
 
 
 def _two_up_row(canvas: Image.Image, left_image: Image.Image, right_image: Image.Image, top: int) -> None:
@@ -151,9 +184,7 @@ def export_png_from_assets(month_display: str, year_display: str, image_paths: d
     canvas = Image.new("RGBA", (CANVAS_WIDTH, CANVAS_HEIGHT), "white")
     draw = ImageDraw.Draw(canvas)
 
-    _draw_header(draw, month_display, year_display)
-
-    current_top = TOP_MARGIN + HEADER_HEIGHT + ROW_GAP
+    current_top = _draw_banner_art(canvas, month_display, year_display) + ROW_GAP
 
     _draw_section_title(draw, "MTD/YTD VIC P&P vs BU", current_top)
     current_top += PILL_HEIGHT + SECTION_GAP
@@ -188,7 +219,7 @@ def export_png_from_assets(month_display: str, year_display: str, image_paths: d
     current_top += PILL_HEIGHT + SECTION_GAP
     _single_row(canvas, _load_rgba(image_paths["mtd_perf_zone_table.png"]), current_top)
 
-    _draw_footer(draw)
+    _draw_footer_art(canvas)
 
     canvas.convert("RGB").save(png_path, format="PNG", optimize=True)
     return png_path
@@ -201,9 +232,7 @@ def export_performance_png_from_assets(month_display: str, year_display: str, im
     canvas = Image.new("RGBA", (CANVAS_WIDTH, CANVAS_HEIGHT), "white")
     draw = ImageDraw.Draw(canvas)
 
-    _draw_header(draw, month_display, year_display)
-
-    current_top = TOP_MARGIN + HEADER_HEIGHT + ROW_GAP
+    current_top = _draw_banner_art(canvas, month_display, year_display) + ROW_GAP
 
     _draw_section_title(draw, "MTD/YTD VIC Performance vs BU", current_top)
     current_top += PILL_HEIGHT + SECTION_GAP
@@ -219,7 +248,7 @@ def export_performance_png_from_assets(month_display: str, year_display: str, im
     current_top += PILL_HEIGHT + SECTION_GAP
     _single_row(canvas, _load_rgba(image_paths["mtd_perf_zone_table.png"]), current_top)
 
-    _draw_footer(draw)
+    _draw_footer_art(canvas)
 
     canvas.convert("RGB").save(png_path, format="PNG", optimize=True)
     return png_path
