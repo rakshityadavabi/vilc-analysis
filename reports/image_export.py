@@ -80,7 +80,7 @@ def _draw_header(draw: ImageDraw.ImageDraw, month_display: str, year_display: st
     title_font = _font(56, bold=True)
     meta_font = _font(36, bold=True)
 
-    title = "Preliminary MTD\nVILC Results | P&P"
+    title = "P&P – MTD/YTD - VIC vs BU"
     date_text = f"{month_display}, {year_display}"
     date_box = (band_left + 46, TOP_MARGIN + 44, band_left + 420, TOP_MARGIN + 150)
     draw.rounded_rectangle(date_box, radius=18, fill="#fff2bf")
@@ -186,36 +186,39 @@ def export_png_from_assets(month_display: str, year_display: str, image_paths: d
 
     current_top = _draw_banner_art(canvas, month_display, year_display) + ROW_GAP
 
-    _draw_section_title(draw, "MTD/YTD VIC P&P vs BU", current_top)
+    _draw_section_title(draw, "P&P – MTD/YTD - VIC vs BU", current_top)
     current_top += PILL_HEIGHT + SECTION_GAP
     _two_up_row(canvas, _load_rgba(image_paths["mtd_vic_pp_mtd.png"]), _load_rgba(image_paths["mtd_vic_pp_ytd.png"]), current_top)
     current_top += CHART_ROW_HEIGHT + ROW_GAP
 
-    _draw_section_title(draw, "MTD/YTD VIC Price vs BU", current_top)
+    _draw_section_title(draw, "Price – MTD/YTD - VIC vs BU", current_top)
     current_top += PILL_HEIGHT + SECTION_GAP
     _two_up_row(canvas, _load_rgba(image_paths["mtd_vic_price_mtd.png"]), _load_rgba(image_paths["mtd_vic_price_ytd.png"]), current_top)
     current_top += CHART_ROW_HEIGHT + ROW_GAP
 
-    _draw_section_title(draw, "MTD vs BGT category by Zone ($Mio)", current_top)
+    _draw_section_title(draw, "Price - Package vs Zone – VIC vs BU", current_top)
     current_top += PILL_HEIGHT + SECTION_GAP
     _two_up_row(canvas, _load_rgba(image_paths["mtd_category_mtd.png"]), _load_rgba(image_paths["mtd_category_ytd.png"]), current_top)
-    current_top += CHART_ROW_HEIGHT + ROW_GAP + 20
+    current_top += CHART_ROW_HEIGHT + ROW_GAP + 44
+
+    _draw_section_title(draw, "Price - Package vs Zone – VIC vs BU", current_top)
+    current_top += PILL_HEIGHT + SECTION_GAP
 
     zone_table_image = _load_rgba(image_paths["mtd_zone_table.png"])
     _single_row(canvas, zone_table_image, current_top)
-    current_top += _fit_width_height(zone_table_image) + ROW_GAP + 20
+    current_top += _fit_width_height(zone_table_image) + ROW_GAP + 44
 
-    _draw_section_title(draw, "MTD/YTD VIC Performance vs BU", current_top)
+    _draw_section_title(draw, "Performance – MTD/YTD - VIC vs BU", current_top)
     current_top += PILL_HEIGHT + SECTION_GAP
     _two_up_row(canvas, _load_rgba(image_paths["mtd_perf_mtd.png"]), _load_rgba(image_paths["mtd_perf_ytd.png"]), current_top)
     current_top += CHART_ROW_HEIGHT + ROW_GAP
 
-    _draw_section_title(draw, "MTD/YTD VIC Performance by package", current_top)
+    _draw_section_title(draw, "Performance by Package – MTD/YTD – VIC vs BU", current_top)
     current_top += PILL_HEIGHT + SECTION_GAP
     _two_up_row(canvas, _load_rgba(image_paths["mtd_perf_category_mtd.png"]), _load_rgba(image_paths["mtd_perf_category_ytd.png"]), current_top)
     current_top += CHART_ROW_HEIGHT + ROW_GAP + 20
 
-    _draw_section_title(draw, "MTD vs BGT performance category by Zone ($Mio)", current_top)
+    _draw_section_title(draw, "Performance  - Package vs Zone – VIC vs BU", current_top)
     current_top += PILL_HEIGHT + SECTION_GAP
     _single_row(canvas, _load_rgba(image_paths["mtd_perf_zone_table.png"]), current_top)
 
