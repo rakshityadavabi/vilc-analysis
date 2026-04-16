@@ -5,3 +5,4 @@ numpy
 databricks-sql-connector
 matplotlib
 kaleido
+python-dotenv
