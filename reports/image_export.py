@@ -6,7 +6,7 @@ from PIL import Image, ImageDraw, ImageFont, ImageOps
 
 
 CANVAS_WIDTH = 3200
-CANVAS_HEIGHT = 14500
+FOOTER_PADDING = 120  # extra space below the last section for footer art + breathing room
 MARGIN_X = 110
 TOP_MARGIN = 38
 HEADER_HEIGHT = 210
@@ -80,7 +80,7 @@ def _draw_header(draw: ImageDraw.ImageDraw, month_display: str, year_display: st
     title_font = _font(56, bold=True)
     meta_font = _font(36, bold=True)
 
-    title = "P&P – MTD/YTD - VIC vs BU"
+    title = "P&P – MTD/YTD - VILC vs BU"
     date_text = f"{month_display}, {year_display}"
     date_box = (band_left + 46, TOP_MARGIN + 44, band_left + 420, TOP_MARGIN + 150)
     draw.rounded_rectangle(date_box, radius=18, fill="#fff2bf")
@@ -133,9 +133,9 @@ def _draw_banner_art(canvas: Image.Image, month_display: str, year_display: str)
     return banner_top + _fit_width_height(header_art)
 
 
-def _draw_footer(draw: ImageDraw.ImageDraw) -> None:
+def _draw_footer(draw: ImageDraw.ImageDraw, canvas_height: int) -> None:
     footer_font = _font(22, bold=False)
-    footer_y = CANVAS_HEIGHT - 64
+    footer_y = canvas_height - 64
     draw.text((MARGIN_X, footer_y), "ABInBev", fill="#666666", font=footer_font)
     center_text = "Generated report"
     center_bbox = draw.textbbox((0, 0), center_text, font=footer_font)
@@ -147,13 +147,25 @@ def _draw_footer(draw: ImageDraw.ImageDraw) -> None:
     draw.text((CANVAS_WIDTH - MARGIN_X - right_width, footer_y), right_text, fill="#c89d00", font=footer_font)
 
 
-def _draw_footer_art(canvas: Image.Image) -> None:
+def _footer_art_height() -> int:
+    """Return the scaled height of the footer art image."""
     footer_art = _load_rgba(FOOTER_ART_PATH)
     footer_width = CANVAS_WIDTH - 2 * MARGIN_X
     scale = footer_width / float(footer_art.width)
-    footer_height = max(1, int(round(footer_art.height * scale)))
-    footer_top = CANVAS_HEIGHT - footer_height - 40
+    return max(1, int(round(footer_art.height * scale)))
+
+
+def _draw_footer_art(canvas: Image.Image, canvas_height: int) -> None:
+    footer_art = _load_rgba(FOOTER_ART_PATH)
+    footer_height = _footer_art_height()
+    footer_top = canvas_height - footer_height - 40
     _paste_fit_width(canvas, footer_art, MARGIN_X, CANVAS_WIDTH - MARGIN_X, footer_top)
+
+
+def _compute_canvas_height(content_bottom: int) -> int:
+    """Calculate the total canvas height needed to fit all content plus footer."""
+    footer_h = _footer_art_height()
+    return content_bottom + footer_h + FOOTER_PADDING
 
 
 def _two_up_row(canvas: Image.Image, left_image: Image.Image, right_image: Image.Image, top: int) -> None:
@@ -181,48 +193,64 @@ def export_png_from_assets(month_display: str, year_display: str, image_paths: d
     png_path = Path(output_path)
     png_path.parent.mkdir(parents=True, exist_ok=True)
 
-    canvas = Image.new("RGBA", (CANVAS_WIDTH, CANVAS_HEIGHT), "white")
+    # --- Pre-load variable-height images to measure layout ---
+    zone_table_image = _load_rgba(image_paths["mtd_zone_table.png"])
+    perf_zone_table_image = _load_rgba(image_paths["mtd_perf_zone_table.png"])
+
+    # --- Simulate layout to compute required canvas height ---
+    # (mirrors the drawing sequence below without touching a canvas)
+    banner_h = _fit_width_height(_load_rgba(HEADER_ART_PATH))
+    sim_top = TOP_MARGIN + 92 + banner_h + ROW_GAP              # after banner
+    sim_top += PILL_HEIGHT + SECTION_GAP + CHART_ROW_HEIGHT + ROW_GAP   # MTD/YTD VIC P&P
+    sim_top += PILL_HEIGHT + SECTION_GAP + CHART_ROW_HEIGHT + ROW_GAP   # MTD/YTD VIC Price
+    sim_top += PILL_HEIGHT + SECTION_GAP + CHART_ROW_HEIGHT + ROW_GAP + 20  # MTD vs BGT category
+    sim_top += _fit_width_height(zone_table_image) + ROW_GAP + 20       # zone table
+    sim_top += PILL_HEIGHT + SECTION_GAP + CHART_ROW_HEIGHT + ROW_GAP   # MTD/YTD VIC Performance
+    sim_top += PILL_HEIGHT + SECTION_GAP + CHART_ROW_HEIGHT + ROW_GAP + 20  # MTD/YTD VIC Perf by pkg
+    sim_top += PILL_HEIGHT + SECTION_GAP + _fit_width_height(perf_zone_table_image)  # perf zone table
+    canvas_height = _compute_canvas_height(sim_top)
+
+    canvas = Image.new("RGBA", (CANVAS_WIDTH, canvas_height), "white")
     draw = ImageDraw.Draw(canvas)
 
     current_top = _draw_banner_art(canvas, month_display, year_display) + ROW_GAP
 
-    _draw_section_title(draw, "P&P – MTD/YTD - VIC vs BU", current_top)
+    _draw_section_title(draw, "P&P – MTD/YTD - VILC vs BU", current_top)
     current_top += PILL_HEIGHT + SECTION_GAP
     _two_up_row(canvas, _load_rgba(image_paths["mtd_vic_pp_mtd.png"]), _load_rgba(image_paths["mtd_vic_pp_ytd.png"]), current_top)
     current_top += CHART_ROW_HEIGHT + ROW_GAP
 
-    _draw_section_title(draw, "Price – MTD/YTD - VIC vs BU", current_top)
+    _draw_section_title(draw, "Price – MTD/YTD - VILC vs BU", current_top)
     current_top += PILL_HEIGHT + SECTION_GAP
     _two_up_row(canvas, _load_rgba(image_paths["mtd_vic_price_mtd.png"]), _load_rgba(image_paths["mtd_vic_price_ytd.png"]), current_top)
     current_top += CHART_ROW_HEIGHT + ROW_GAP
 
-    _draw_section_title(draw, "Price - Package vs Zone – VIC vs BU", current_top)
+    _draw_section_title(draw, "Price - Package vs Zone – VILC vs BU", current_top)
     current_top += PILL_HEIGHT + SECTION_GAP
     _two_up_row(canvas, _load_rgba(image_paths["mtd_category_mtd.png"]), _load_rgba(image_paths["mtd_category_ytd.png"]), current_top)
     current_top += CHART_ROW_HEIGHT + ROW_GAP + 44
 
-    _draw_section_title(draw, "Price - Package vs Zone – VIC vs BU", current_top)
+    _draw_section_title(draw, "Price - Package vs Zone – VILC vs BU", current_top)
     current_top += PILL_HEIGHT + SECTION_GAP
 
-    zone_table_image = _load_rgba(image_paths["mtd_zone_table.png"])
     _single_row(canvas, zone_table_image, current_top)
     current_top += _fit_width_height(zone_table_image) + ROW_GAP + 44
 
-    _draw_section_title(draw, "Performance – MTD/YTD - VIC vs BU", current_top)
+    _draw_section_title(draw, "Performance – MTD/YTD - VILC vs BU", current_top)
     current_top += PILL_HEIGHT + SECTION_GAP
     _two_up_row(canvas, _load_rgba(image_paths["mtd_perf_mtd.png"]), _load_rgba(image_paths["mtd_perf_ytd.png"]), current_top)
     current_top += CHART_ROW_HEIGHT + ROW_GAP
 
-    _draw_section_title(draw, "Performance by Package – MTD/YTD – VIC vs BU", current_top)
+    _draw_section_title(draw, "Performance by Package – MTD/YTD – VILC vs BU", current_top)
     current_top += PILL_HEIGHT + SECTION_GAP
     _two_up_row(canvas, _load_rgba(image_paths["mtd_perf_category_mtd.png"]), _load_rgba(image_paths["mtd_perf_category_ytd.png"]), current_top)
     current_top += CHART_ROW_HEIGHT + ROW_GAP + 20
 
-    _draw_section_title(draw, "Performance  - Package vs Zone – VIC vs BU", current_top)
+    _draw_section_title(draw, "Performance  - Package vs Zone – VILC vs BU", current_top)
     current_top += PILL_HEIGHT + SECTION_GAP
-    _single_row(canvas, _load_rgba(image_paths["mtd_perf_zone_table.png"]), current_top)
+    _single_row(canvas, perf_zone_table_image, current_top)
 
-    _draw_footer_art(canvas)
+    _draw_footer_art(canvas, canvas_height)
 
     canvas.convert("RGB").save(png_path, format="PNG", optimize=True)
     return png_path
@@ -232,26 +260,37 @@ def export_performance_png_from_assets(month_display: str, year_display: str, im
     png_path = Path(output_path)
     png_path.parent.mkdir(parents=True, exist_ok=True)
 
-    canvas = Image.new("RGBA", (CANVAS_WIDTH, CANVAS_HEIGHT), "white")
+    # --- Pre-load variable-height images to measure layout ---
+    perf_zone_table_image = _load_rgba(image_paths["mtd_perf_zone_table.png"])
+
+    # --- Simulate layout to compute required canvas height ---
+    banner_h = _fit_width_height(_load_rgba(HEADER_ART_PATH))
+    sim_top = TOP_MARGIN + 92 + banner_h + ROW_GAP              # after banner
+    sim_top += PILL_HEIGHT + SECTION_GAP + CHART_ROW_HEIGHT + ROW_GAP   # MTD/YTD VIC Performance
+    sim_top += PILL_HEIGHT + SECTION_GAP + CHART_ROW_HEIGHT + ROW_GAP + 20  # MTD/YTD VIC Perf by pkg
+    sim_top += PILL_HEIGHT + SECTION_GAP + _fit_width_height(perf_zone_table_image)  # perf zone table
+    canvas_height = _compute_canvas_height(sim_top)
+
+    canvas = Image.new("RGBA", (CANVAS_WIDTH, canvas_height), "white")
     draw = ImageDraw.Draw(canvas)
 
     current_top = _draw_banner_art(canvas, month_display, year_display) + ROW_GAP
 
-    _draw_section_title(draw, "MTD/YTD VIC Performance vs BU", current_top)
+    _draw_section_title(draw, "MTD/YTD VILC Performance vs BU", current_top)
     current_top += PILL_HEIGHT + SECTION_GAP
     _two_up_row(canvas, _load_rgba(image_paths["mtd_perf_mtd.png"]), _load_rgba(image_paths["mtd_perf_ytd.png"]), current_top)
     current_top += CHART_ROW_HEIGHT + ROW_GAP
 
-    _draw_section_title(draw, "MTD/YTD VIC Performance by package", current_top)
+    _draw_section_title(draw, "MTD/YTD VILC Performance by package", current_top)
     current_top += PILL_HEIGHT + SECTION_GAP
     _two_up_row(canvas, _load_rgba(image_paths["mtd_perf_category_mtd.png"]), _load_rgba(image_paths["mtd_perf_category_ytd.png"]), current_top)
     current_top += CHART_ROW_HEIGHT + ROW_GAP + 20
 
     _draw_section_title(draw, "MTD vs BGT performance category by Zone ($Mio)", current_top)
     current_top += PILL_HEIGHT + SECTION_GAP
-    _single_row(canvas, _load_rgba(image_paths["mtd_perf_zone_table.png"]), current_top)
+    _single_row(canvas, perf_zone_table_image, current_top)
 
-    _draw_footer_art(canvas)
+    _draw_footer_art(canvas, canvas_height)
 
     canvas.convert("RGB").save(png_path, format="PNG", optimize=True)
     return png_path
